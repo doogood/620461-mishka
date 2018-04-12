@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Екатерина Шмыголь](https://up.htmlacademy.ru/adaptive/14/user/620461).
-* Наставник: `Неизвестно`.
+* Наставник: [Анна Пономарёва](https://htmlacademy.ru/profile/id153610)
 
 ---
 
