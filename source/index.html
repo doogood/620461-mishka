@@ -58,8 +58,8 @@
 
       <section class="page-main__top-product">
         <h2 class="top-product__title">Вязаные корзинки</h2>
-        <p class="secondary-text">Товар недели</p>
-        <p class="product__text primary-text">
+        <p class="top-product__text">Товар недели</p>
+        <p class="product__text">
           Экологически чистая пряжа,
           ручная работа. Доступны в шести
           расцветках, и трех размерах.
@@ -81,11 +81,32 @@
         </table>
 
         <img class="product__text" src="http://placehold.it/260x315" width="260" height="315" alt="На руках держат три вязаные корзинки">
-        <p class="product__price primary-text">
+        <p class="product__price">
           <strong>Цена: 990 руб.</strong>
         </p>
         <a class="order__button button" href="#">Заказать</a>
         <!-- after click - modal window -->
+
+        <form class="order-form__top-product modal-form" action="https://echo.htmlacademy.ru" method="post">
+          <h1 class="form__title">Добавить в корзину</h1>
+          <p class="form__text">Выберите размер:</p>
+          <div class="size__buttons">
+            <label class="size__button-s">
+              <input type="radio" name="size-s" checked>
+              S
+            </label>
+            <label class="size__button-m">
+              <input type="radio" name="size-m">
+              M
+            </label>
+            <label class="size__button-l">
+              <input type="radio" name="size-l">
+              L
+            </label>
+            <input type="submit" value="Добавить">
+          </div>
+        </form>
+
       </section>
 
       <section class="advantages">
