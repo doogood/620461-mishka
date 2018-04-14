@@ -64,7 +64,6 @@
           ручная работа. Доступны в шести
           расцветках, и трех размерах.
         </p>
-
         <table class="product__options">
           <tr>
             <td class="product__color">Цвет:</td>
@@ -79,39 +78,39 @@
             <td class="product__height--value">15 см</td>
           </tr>
         </table>
-
         <img class="product__text" src="http://placehold.it/260x315" width="260" height="315" alt="На руках держат три вязаные корзинки">
         <p class="product__price">
           <strong>Цена: 990 руб.</strong>
         </p>
-        <a class="order__button button" href="#">Заказать</a>
+        <a class="order__button button" href="size.html">Заказать</a>
         <!-- after click - modal window -->
+      </section>
 
-        <form class="order-form__top-product modal-form" action="https://echo.htmlacademy.ru" method="post">
-          <h1 class="form__title">Добавить в корзину</h1>
-          <p class="form__text">Выберите размер:</p>
+      <!-- modal window -->
+      <section class="size-form size-form__modal">
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <h1 class="size-form__title">Добавить в корзину</h1>
+          <p class="size-form__text">Выберите размер:</p>
           <div class="size__buttons">
             <label class="size__button-s">
-              <input type="radio" name="size-s" checked>
+              <input type="radio" name="size" value="S" checked>
               S
             </label>
             <label class="size__button-m">
-              <input type="radio" name="size-m">
+              <input type="radio" name="size" value="M">
               M
             </label>
             <label class="size__button-l">
-              <input type="radio" name="size-l">
+              <input type="radio" name="size" value="L">
               L
             </label>
-            <input type="submit" value="Добавить">
           </div>
+          <input class="add__button button" type="submit" value="Добавить">
         </form>
-
       </section>
 
       <section class="advantages">
         <h2 class="advantages__title">Коротко о нас:</h2>
-
         <!-- Before text - icons in CSS -->
         <ul class="advantages__list">
           <li class="advantages__item--eco">
@@ -176,7 +175,7 @@
           <button class="slider__toggle" type="button">Предыдущий отзыв</button>
           <button class="slider__toggle" type="button">Следующий отзыв</button>
         </p>
-        <a class="reviews__write button" href="#">Написать</a>
+        <a class="reviews__write button" href="review.html">Написать</a>
       </section>
     </main>
 
@@ -200,7 +199,7 @@
         <h2 class="visually-hidden">Магазин «Мишка» на карте</h2>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651586!2d30.320894616097!3d59.938794181876254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+Street%2C+19%2C+Sankt-Peterburg%2C+191186!5e0!3m2!1sen!2sru!4v1523632385150" width="322" height="457" style="border:0" allowfullscreen></iframe>
       </div>
-      <a class="reviews__write button" href="https://echo.htmlacademy.ru">Напишите нам</a>
+      <a class="reviews__write button" href="feedback.html">Напишите нам</a>
       <nav class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
