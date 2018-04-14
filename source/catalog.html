@@ -5,6 +5,163 @@
     <title>Каталог товаров</title>
   </head>
   <body>
+    <header class="page-header">
+        <a class="page-header__logo" href="index.html">
+          <img class="page-header__logo-image" src="http://placehold.it/86x35" width="86" height="35" alt="Логотип магазина «Мишка». Переход на главную страницу">
+        </a>
+        <nav class="main-nav ">
+          <button class="main-nav__toggle" type="button">Открыть меню</button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item site-list__item--active">
+                <a>Каталог товаров</a>
+              </li>
+              <li class="site-list__item">
+                <a href="form.html">Вязание на заказ</a>
+              </li>
+              <li class="site-list__item">
+                <!-- Icon-magnifier in CSS -->
+                <a href="#">Поиск по сайту</a>
+              </li>
+              <li class="site-list__item">
+                <!-- Icon-basket in CSS -->
+                <a href="#">Корзина: пока пуста</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
 
-  </body>
+      <main class="page-main__catalog">
+        <section class="catalog">
+          <h2 class="visually-hidden">Список товаров</h2>
+          <ul class="catalog-list">
+            <li class="catalog-item">
+              <a href="catalog-item-1.html">
+                <img class="catalog-item__image"src="http://placehold.it/260x195" alt="Вязаный зайчик тёмно-голубого цвета»" width="260" height="195">
+                <h3 class="catalog-item__title">Зайчик-попрыгайчик</h3>
+              </a>
+              <p class="catalog-item__text">
+                Рост 30 см, вес 200 г
+              </p>
+              <p class="catalog-item__price">
+                <b>1 200 руб.</b>
+                <a class="catalog-item__button" href="size.html">
+                  <img class="catalog-item__button--icon" src="http://placehold.it/86x35" width="20" height="19" alt="Иконка корзины. Переход в форму выбора размера">
+                </a>
+                <!-- after click - modal window -->
+              </p>
+            </li>
+
+            <li class="catalog-item">
+              <a href="catalog-item-2.html">
+                <img class="catalog-item__image"src="http://placehold.it/260x195" alt="Вязаная корзинка бело-персикового цвета. В ней 3 свертка белья" width="260" height="195">
+                <h3 class="catalog-item__title">Корзинка для белья</h3>
+              </a>
+              <p class="catalog-item__text">
+                Диаметр 15 см, высота 10 см
+              </p>
+              <p class="catalog-item__price">
+                <b>690 руб.</b>
+                <a class="catalog-item__button" href="size.html">
+                  <img class="catalog-item__button--icon" src="http://placehold.it/86x35" width="20" height="19" alt="Иконка корзины. Переход в форму выбора размера">
+                </a>
+                <!-- after click - modal window -->
+              </p>
+            </li>
+
+            <li class="catalog-item">
+              <a href="catalog-item-3.html">
+                <img class="catalog-item__image"src="http://placehold.it/260x195" alt="Вязаная корзинка бело-фисташкового цвета. В ней шесть милых маленьких игрушек" width="260" height="195">
+                <h3 class="catalog-item__title">Большая корзинка для игрушек</h3>
+              </a>
+              <p class="catalog-item__text">
+                Диаметр 30 см, высота 30 см
+              </p>
+              <p class="catalog-item__price">
+                <b>1 500 руб.</b>
+                <a class="catalog-item__button" href="size.html">
+                  <img class="catalog-item__button--icon" src="http://placehold.it/86x35" width="20" height="19" alt="Иконка корзины. Переход в форму выбора размера">
+                </a>
+                <!-- after click - modal window -->
+              </p>
+            </li>
+          </ul>
+        </section>
+
+        <!-- modal window -->
+        <section class="size-form size-form__modal">
+          <form action="https://echo.htmlacademy.ru" method="post">
+            <h1 class="size-form__title">Добавить в корзину</h1>
+            <p class="size-form__text">Выберите размер:</p>
+            <div class="size__buttons">
+              <label class="size__button-s">
+                <input type="radio" name="size" value="S" checked>
+                S
+              </label>
+              <label class="size__button-m">
+                <input type="radio" name="size" value="M">
+                M
+              </label>
+              <label class="size__button-l">
+                <input type="radio" name="size" value="L">
+                L
+              </label>
+            </div>
+            <input class="add__button button" type="submit" value="Добавить">
+          </form>
+        </section>
+
+        <section class="video">
+          <!-- Icon-camera in CSS -->
+          <h3 class="video__title">
+            Процесс производства
+          </h3>
+          <div class="video-player">
+            <img class="video-player__image" src="http://placehold.it/260x152" width="260" height="152" alt="Видеозапись">
+          </div>
+          <p class="video__description">
+            По просьбам наших
+            любимых фолловеров мы
+            сняли для вас подробное
+            видео о том, как появляются
+            наши товары.
+          </p>
+          <a class="order__button button" href="form.html">Сделать заказ</a>
+        </section>
+      </main>
+
+      <footer class="page-footer">
+        <nav class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">
+                <span class="visually-hidden">Инстаграм</span>
+                <!-- <svg></svg> -->
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
+                <span class="visually-hidden">Фейсбук</span>
+                <!-- <svg></svg> -->
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru">
+                <span class="visually-hidden">Твиттер</span>
+                <!-- <svg></svg> -->
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <p class="footer-copyright">
+          <span>Разработано</span>
+          <a class="button" href="https://htmlacademy.ru/intensive/adaptive">
+            <span class="visually-hidden">HTML Academy</span>
+            <!-- <svg></svg> -->
+          </a>
+        </p>
+      </footer>
+
+    </body>
 </html>
