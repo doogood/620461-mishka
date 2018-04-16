@@ -37,94 +37,94 @@
           <section class="form">
             <h2 class="visually-hidden">Фильтр товаров, форма для заполнения данных</h2>
             <p class="form__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
-          <form class="form__order" method="get"
-          action="https://echo.htmlacademy.ru">
-            <fieldset class="form__type filter-type">
-              <legend class="filter-type__title">Тип</legend>
-              <ul class="filter-type__list">
-                <li class="filter-type__option">
-                  <input class="visually-hidden filter-type__input filter-type__input--radio" type="radio" name="product-type" value="accessory" id="filter-type__accessory" checked>
-                  <label for="filter-type__accessory">Аксессуар для интерьера</label>
-                </li>
-                <li class="filter-type__option">
-                  <input class="visually-hidden filter-type__input filter-type__input--radio" type="radio" name="product-type" value="toy" id="filter-type__toy">
-                  <label for="filter-type__toy">Детская игрушка</label>
-                </li>
-              </ul>
-            </fieldset>
-            <fieldset class="form__color filter-color">
-              <legend class="filter-color__title">Цвет</legend>
-              <ul class="filter-color__list">
-                <li class="filter-color__option">
-                  <input class="visually-hidden filter-color__input filter-color__input--checkbox" type="checkbox" name="product-color" value="white" id="filter-color__white" checked>
-                  <label for="filter-color__white">Белый</label>
-                </li>
-                <li class="filter-color__option">
-                  <input class="visually-hidden filter-color__input filter-color__input--checkbox" type="checkbox" name="product-color" value="gray" id="filter-color__gray" checked>
-                  <label for="filter-color__gray">Серый</label>
-                </li>
-                <li class="filter-color__option">
-                  <input class="visually-hidden filter-color__input filter-color__input--checkbox" type="checkbox" name="product-color" value="tiffani" id="filter-color__tiffani">
-                  <label for="filter-color__tiffani">«Тиффани»</label>
-                </li>
-                <li class="filter-color__option">
-                  <input class="visually-hidden filter-color__input filter-color__input--checkbox" type="checkbox" name="product-color" value="black" id="filter-color__black">
-                  <label for="filter-color__black">Черный</label>
-                </li>
-                <li class="filter-color__option">
-                  <input class="visually-hidden filter-color__input filter-color__input--checkbox" type="checkbox" name="product-color" value="pink" id="filter-color__pink">
-                  <label for="filter-color__pink">Розовый</label>
-                </li>
-                <li class="filter-color__option">
-                  <input class="visually-hidden filter-color__input filter-color__input--checkbox" type="checkbox" name="product-color" value="orange" id="filter-color__orange">
-                  <label for="filter-color__orange">Оранжевый</label>
-                </li>
-              </ul>
-            </fieldset>
-            <fieldset class="form__data-person data-person">
-              <legend class="data-person__title">ФИО</legend>
-              <ul class="data-person__list">
-                <li class="data-person__option">
-                  <label for="data-person__firstname">Имя:</label>
-                  <input type="text" name="firstname" id="data-person__firstname" placeholder="Введите ваше имя*" required>
-                </li>
-                <li class="data-person__option">
-                  <label for="data-person__lastname">Фамилия:</label>
-                  <input type="text" name="lastname" id="data-person__lastname" placeholder="Укажите фамилию*" required>
-                </li>
-                <li class="data-person__option">
-                  <label for="data-person__patronymic">Отчество:</label>
-                  <input type="text" name="patronymic" id="data-person__patronymic" placeholder="Отчество, если желаете">
-                </li>
-              </ul>
-            </fieldset>
-            <fieldset class="form__phone phone">
-              <legend class="phone__title">Тел</legend>
-              <div class="phone__wrapper">
-                <label for="telephone"></label>
-                <input type="tel" name="phone" id="telephone" placeholder="+7 XXX XX XX*" required>
-                <!-- icon-phone -->
-                <input class="phone__icon" type="image" src="">
-              </div>
-            </fieldset>
-            <fieldset class="form__email email">
-              <legend class="email__title">E-mail</legend>
-              <div class="email__wrapper">
-                <label for="e-mail"></label>
-                <input type="email" name="email" id="e-mail" placeholder="Ваш Email*" required>
-                <!-- icon-envelope -->
-                <input class="email__icon" type="image" src="">
-              </div>
-            </fieldset>
-            <fieldset class="form__feedback feedback">
-              <legend class="feedback__title">Доп</legend>
-              <textarea rows="7" cols="27" name="message" id="message" placeholder="Опишите все ваши пожелания к заказу"></textarea>
-            </fieldset>
-            <p class="form__note">*Поля обязательны для заполнения</p>
-            <input class="form__button button" type="submit" value="Отправить заказ">
-          </form>
-        </section>
-      </main>
+            <form class="form__order" method="get"
+            action="https://echo.htmlacademy.ru">
+              <fieldset class="form__type filter-type">
+                <legend class="form__title">Тип</legend>
+                <ul class="filter-type__list">
+                  <li class="filter-type__option">
+                    <input class="visually-hidden filter-type__input filter-type__input--radio" type="radio" name="product-type" value="accessory" id="filter-type__accessory" checked>
+                    <label for="filter-type__text">Аксессуар для интерьера</label>
+                  </li>
+                  <li class="filter-type__option">
+                    <input class="visually-hidden filter-type__input filter-type__input--radio" type="radio" name="product-type" value="toy" id="filter-type__toy">
+                    <label for="filter-type__text">Детская игрушка</label>
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset class="form__color filter-color">
+                <legend class="form__title">Цвет</legend>
+                <ul class="filter-color__list">
+                  <li class="filter-color__option">
+                    <input class="visually-hidden filter-color__input filter-color__input--checkbox" type="checkbox" name="product-color" value="white" id="filter-color__white" checked>
+                    <label for="filter-color__text">Белый</label>
+                  </li>
+                  <li class="filter-color__option">
+                    <input class="visually-hidden filter-color__input filter-color__input--checkbox" type="checkbox" name="product-color" value="gray" id="filter-color__gray" checked>
+                    <label for="filter-color__text">Серый</label>
+                  </li>
+                  <li class="filter-color__option">
+                    <input class="visually-hidden filter-color__input filter-color__input--checkbox" type="checkbox" name="product-color" value="tiffani" id="filter-color__tiffani">
+                    <label for="filter-color__text">«Тиффани»</label>
+                  </li>
+                  <li class="filter-color__option">
+                    <input class="visually-hidden filter-color__input filter-color__input--checkbox" type="checkbox" name="product-color" value="black" id="filter-color__black">
+                    <label for="filter-color__text">Черный</label>
+                  </li>
+                  <li class="filter-color__option">
+                    <input class="visually-hidden filter-color__input filter-color__input--checkbox" type="checkbox" name="product-color" value="pink" id="filter-color__pink">
+                    <label for="filter-color__text">Розовый</label>
+                  </li>
+                  <li class="filter-color__option">
+                    <input class="visually-hidden filter-color__input filter-color__input--checkbox" type="checkbox" name="product-color" value="orange" id="filter-color__orange">
+                    <label for="filter-color__text">Оранжевый</label>
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset class="form__data-person data-person">
+                <legend class="form__title">ФИО</legend>
+                <ul class="data-person__list">
+                  <li class="data-person__option">
+                    <label for="data-person__firstname">Имя:</label>
+                    <input class="data-person__input" type="text" name="firstname" id="data-person__firstname" placeholder="Введите ваше имя*" required>
+                  </li>
+                  <li class="data-person__option">
+                    <label for="data-person__lastname">Фамилия:</label>
+                    <input class="data-person__input" type="text" name="lastname" id="data-person__lastname" placeholder="Укажите фамилию*" required>
+                  </li>
+                  <li class="data-person__option">
+                    <label for="data-person__patronymic">Отчество:</label>
+                    <input class="data-person__input" type="text" name="patronymic" id="data-person__patronymic" placeholder="Отчество, если желаете">
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset class="form__phone phone">
+                <legend class="form__title">Тел</legend>
+                <div class="phone__wrapper">
+                  <label for="telephone"></label>
+                  <input class="data-person__input" type="tel" name="phone" id="telephone" placeholder="+7 XXX XX XX*" required>
+                  <!-- icon-phone -->
+                  <input class="data-person__input--phone" type="image" src="">
+                </div>
+              </fieldset>
+              <fieldset class="form__email email">
+                <legend class="form__title">E-mail</legend>
+                <div class="email__wrapper">
+                  <label for="e-mail"></label>
+                  <input class="data-person__input" type="email" name="email" id="e-mail" placeholder="Ваш Email*" required>
+                  <!-- icon-envelope -->
+                  <input class="data-person__input--email" type="image" src="">
+                </div>
+              </fieldset>
+              <fieldset class="form__feedback feedback">
+                <legend class="form__title">Доп</legend>
+                <textarea rows="7" cols="27" name="message" id="message" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+              </fieldset>
+              <p class="form__note">*Поля обязательны для заполнения</p>
+              <input class="form__button button" type="submit" value="Отправить заказ">
+            </form>
+          </section>
+        </main>
 
       <footer class="page-footer">
         <nav class="page-footer__social social">
