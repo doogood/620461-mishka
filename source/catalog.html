@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Каталог товаров</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <a class="page-header__logo" href="index.html">
+        <img class="page-header__logo-image" src="http://placehold.it/86x35" width="86" height="35" alt="Логотип магазина «Мишка». Переход на главную страницу">
+      </a>
+      <nav class="main-nav ">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active">
+              <a>Каталог товаров</a>
+            </li>
+            <li class="site-list__item">
+              <a href="form.html">Вязание на заказ</a>
+            </li>
+            <li class="site-list__item site-list__item--icon-magnifier">
+              <a href="#">Поиск по сайту</a>
+            </li>
+            <li class="site-list__item site-list__item--icon-basket">
+              <a href="#">Корзина: пока пуста</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="page-main__catalog">
+      <section class="catalog">
+        <h1 class="visually-hidden">Список товаров</h1>
+        <ul class="catalog__list">
+          <li class="catalog__item">
+            <a href="catalog-item-1.html">
+              <img class="catalog__item--image"src="http://placehold.it/260x195" alt="Вязаный зайчик тёмно-голубого цвета»" width="260" height="195">
+              <h2 class="catalog__item--title">Зайчик-попрыгайчик</h2>
+            </a>
+            <p class="catalog__item--text">Рост 30 см, вес 200 г</p>
+            <p class="catalog__item--price">
+              <b>1 200 руб.</b>
+              <a class="catalog__item--button" href="size.html">
+                <img class="catalog__item--button-icon" src="http://placehold.it/86x35" width="20" height="19" alt="Иконка корзины. Переход в форму выбора размера">
+              </a>
+              <!-- after click - modal window -->
+            </p>
+          </li>
+
+          <li class="catalog__item">
+            <a href="catalog-item-2.html">
+              <img class="catalog__item--image"src="http://placehold.it/260x195" alt="Вязаная корзинка бело-персикового цвета. В ней 3 свертка белья" width="260" height="195">
+              <h2 class="catalog__item--title">Корзинка для белья</h2>
+            </a>
+            <p class="catalog__item--text">Диаметр 15 см, высота 10 см</p>
+            <p class="catalog__item--price">
+              <b>690 руб.</b>
+              <a class="catalog__item--button" href="size.html">
+                <img class="catalog__item--button-icon" src="http://placehold.it/86x35" width="20" height="19" alt="Иконка корзины. Переход в форму выбора размера">
+              </a>
+              <!-- after click - modal window -->
+            </p>
+          </li>
+
+          <li class="catalog__item">
+            <a href="catalog-item-3.html">
+              <img class="catalog__item--image"src="http://placehold.it/260x195" alt="Вязаная корзинка бело-фисташкового цвета. В ней шесть милых маленьких игрушек" width="260" height="195">
+              <h2 class="catalog__item--title">Большая корзинка для игрушек</h2>
+            </a>
+            <p class="catalog__item--text">Диаметр 30 см, высота 30 см</p>
+            <p class="catalog__item--price">
+              <b>1 500 руб.</b>
+              <a class="catalog__item--button" href="size.html">
+                <img class="catalog__item--button-icon" src="http://placehold.it/86x35" width="20" height="19" alt="Иконка корзины. Переход в форму выбора размера">
+              </a>
+              <!-- after click - modal window -->
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="video">
+        <!-- Icon-camera in CSS -->
+        <h2 class="video__title video__title--camera">Процесс производства</h2>
+        <img class="video__player--image" src="http://placehold.it/260x152" width="260" height="152" alt="Видеозапись">
+        <video class="video__player">
+          <source src="">
+        </video>
+        <p class="video__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+        <a class="video__button button" href="form.html">Сделать заказ</a>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <nav class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">
+              <span class="visually-hidden">Инстаграм</span>
+              <!-- <svg></svg> -->
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
+              <span class="visually-hidden">Фейсбук</span>
+              <!-- <svg></svg> -->
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru">
+              <span class="visually-hidden">Твиттер</span>
+              <!-- <svg></svg> -->
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <p class="page-footer__copyright copyright">
+        <span class="copyright__text">Разработано</span>
+        <a class="copyright__link button" href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="visually-hidden">HTML Academy</span>
+          <!-- <svg></svg> -->
+        </a>
+      </p>
+    </footer>
+
+    <!-- modal window -->
+    <section class="size-form size-form__modal">
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <h1 class="size-form__title">Добавить в корзину</h1>
+        <p class="size-form__text">Выберите размер:</p>
+        <div class="size-form__buttons">
+          <label class="size-form__button-s">
+            <input type="radio" name="size" value="S" checked>
+            S
+          </label>
+          <label class="size-form__button-m">
+            <input type="radio" name="size" value="M">
+            M
+          </label>
+          <label class="size-form__button-l">
+            <input type="radio" name="size" value="L">
+            L
+          </label>
+        </div>
+        <input class="size-form__button button" type="submit" value="Добавить">
+      </form>
+    </section>
+    <!-- scripts -->
+  </body>
+</html>
