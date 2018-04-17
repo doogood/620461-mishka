@@ -3,9 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>Вязание на заказ</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
+
   <body>
-    <header class="page-header">
+    <div class="container">
+      <header class="page-header">
         <a class="page-header__logo" href="index.html">
           <img class="page-header__logo-image" src="http://placehold.it/86x35" width="86" height="35" alt="Логотип магазина «Мишка». Переход на главную страницу">
         </a>
@@ -32,7 +35,7 @@
         </nav>
       </header>
 
-      <main class="page-main__form">
+      <main>
         <h1 class="visually-hidden">Форма заказа товаров</h2>
           <section class="form">
             <h2 class="visually-hidden">Фильтр товаров, форма для заполнения данных</h2>
@@ -98,25 +101,25 @@
                   </li>
                 </ul>
               </fieldset>
-              <fieldset class="form__phone phone">
+              <fieldset class="form__phone">
                 <legend class="form__title">Тел</legend>
-                <div class="phone__wrapper">
+                <div class="form__input-wrapper">
                   <label for="telephone"></label>
                   <input class="data-person__input" type="tel" name="phone" id="telephone" placeholder="+7 XXX XX XX*" required>
                   <!-- icon-phone -->
                   <input class="data-person__input data-person__input--phone" type="image" src="">
                 </div>
               </fieldset>
-              <fieldset class="form__email email">
+              <fieldset class="form__email">
                 <legend class="form__title">E-mail</legend>
-                <div class="email__wrapper">
+                <div class="form__input-wrapper">
                   <label for="e-mail"></label>
                   <input class="data-person__input" type="email" name="email" id="e-mail" placeholder="Ваш Email*" required>
                   <!-- icon-envelope -->
                   <input class="data-person__input data-person__input--email" type="image" src="">
                 </div>
               </fieldset>
-              <fieldset class="form__feedback feedback">
+              <fieldset class="form__feedback">
                 <legend class="form__title">Доп</legend>
                 <textarea rows="7" cols="27" name="message" id="message" placeholder="Опишите все ваши пожелания к заказу"></textarea>
               </fieldset>
@@ -157,6 +160,7 @@
           </a>
         </p>
       </footer>
-
+    </div>
+    <!-- scripts -->
   </body>
 </html>
