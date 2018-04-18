@@ -1,27 +1,23 @@
-.main-nav__toggle {
-  position: relative;
-  left: 260px;
-  top: 5px;
+.main-nav {
+  &__toggle {
+    position: relative;
+    left: 260px;
+    top: 5px;
 
-  border: none;
-  background: none;
-
-  cursor: pointer;
-
-
-  background-image: url(../img/logo-close.svg);
-  background-repeat: no-repeat;
-  background-color: #ffffff;
-  background-size: 21px 20px;
+    background-image: url(../img/logo-close.svg);
+    background-repeat: no-repeat;
+    background-color: #ffffff;
+    background-size: 21px 20px;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+  &__list {
+    list-style: none;
+    margin-left: 30px;
+  }
 }
-
-// icon-menu-close.svg
 // icon-menu-open.svg
-
-.main-nav__list {
-  list-style: none;
-  margin-left: 30px;
-}
 
 .site-list__item a {
   .font(@font-regular; @font-bold; bold);

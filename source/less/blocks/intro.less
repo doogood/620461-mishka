@@ -1,30 +1,47 @@
-// .intro {
+.intro {
+  &__header {
+  position: relative;
+  }
+  &__title {
+    position: absolute;
+    top: 50px;
+    left: 70px;
 
-// }
+    text-align: center;
+    line-height: 30px;
+  }
+}
+
 .intro__links {
   list-style: none;
-  // margin-left: 15px;
+  padding-left: 0;
+  vertical-align: middle;
+  
+  a {
+    width: 150px;
+    margin-left: 30px;
+
+    .font(@font-regular; @font-bold; bold);
+    font-size: @body-font-size + 4px;
+    line-height: 24px;
+    position: absolute;
+
+    color: @intro-link-text-color;
+  }
 }
 
-.intro__links a {
-  margin-left: -10px;
-
-  .font(@font-regular; @font-bold; bold);
-  font-size: @body-font-size + 4px;
-  line-height: 24px;
-
-
-  color: @primary-text-color;
-}
-.intro__title {
-  text-align: center;
-  line-height: 30px;
+.intro__link {
+  &:nth-child(1) {
+  background-color: @intro-link-background-color-lamp;
+  }
+  &:nth-child(2) {
+  background-color: @intro-link-background-color-lego;
+  }
 }
 
-.top-product__text {
-  .font(@font-regular; @font-bold; bold);
-  font-size: @body-font-size + 2px;
-  line-height: 20px;
-
-  color: @mint-text-color;
-}
+// .intro__link {
+//   &--lamp {
+//   }
+//   &--lego {
+//   }
+// }
