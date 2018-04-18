@@ -6,6 +6,8 @@ var plumber = require("gulp-plumber");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
+var posthtml = require("gulp-posthtml");
+var include = require("posthtml-include");
 
 gulp.task("style", function() {
   gulp.src("source/less/style.less")
@@ -25,6 +27,12 @@ gulp.task("serve", ["style"], function() {
     open: true,
     cors: true,
     ui: false
+  });
+
+gulp.task("html", function() {
+  return gulp.src("*.html")
+    .pipe(posthtml([include()]))
+    .pipe(gulp.dest("build"));
   });
 
   gulp.watch("source/less/**/*.less", ["style"]);
