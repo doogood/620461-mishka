@@ -1,0 +1,26 @@
+.site-list {
+
+  &__item a {
+    .font(@font-regular; @font-bold; bold);
+    font-size: @body-font-size + 2px;
+    line-height: 24px;
+    vertical-align: middle;
+
+    color: @primary-text-color;
+  }
+  &__item--magnifier {
+    background-image: url(../img/icon-search.svg);
+    background-repeat: no-repeat;
+    background-size: 20px 19px;
+    background-position: 20px;
+    cursor: pointer;
+  }
+
+  &__item--basket {
+    background-image: url(../img/icon-cart.svg);
+    background-repeat: no-repeat;
+    background-size: 20px 19px;
+    background-position: 20px;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,55 @@
+.video {
+  -webkit-padding-start: 30px;
+  -webkit-padding-end: 30px;
+
+  &__title {
+    -webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 70px;
+    width: 100px;
+
+    font-size: @body-font-size + 2px;
+    line-height: 24px;
+
+  }
+  &__title--camera {
+    background-image: url(../img/icon-video.svg);
+    background-repeat: no-repeat;
+    background-size: 46px 36px;
+    background-position: 0px;
+  }
+  &__player {
+    display: none;
+  }
+  &__player--image {
+    // position: relative;
+    // z-index: 1;
+  }
+  // Не получается спозиционировать иконку поверх изображения
+  &__player--icon {
+    // position: relative;
+    // z-index: 2;
+
+    background-image: url(../img/icon-play.svg);
+    background-repeat: no-repeat;
+    background-size: 101px 77px;
+    background-position: 40px;
+  }
+  &__description,
+  &__button {
+    margin-left: 36px;
+    margin-right: 36px;
+  }
+  &__description {
+    -webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
+
+  }
+  &__button {
+    width: 190px;
+    -webkit-margin-before: 30px;
+    -webkit-margin-after: 95px;
+  }
+}

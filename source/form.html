@@ -38,11 +38,11 @@
               <li class="site-list__item site-list__item--active">
                 <a>Вязание на заказ</a>
               </li>
-              <li class="site-list__item site-list__item--icon-magnifier">
+              <li class="site-list__item site-list__item--magnifier">
                 <!-- Icon-magnifier in CSS -->
                 <a href="#">Поиск по сайту</a>
               </li>
-              <li class="site-list__item site-list__item--icon-basket">
+              <li class="site-list__item site-list__item--basket">
                 <!-- Icon-basket in CSS -->
                 <a href="#">Корзина: пока пуста</a>
               </li>
@@ -52,7 +52,7 @@
       </header>
 
       <main>
-        <h1 class="visually-hidden">Форма заказа товаров</h2>
+        <h1 class="big-title">Вязание на заказ</h1>
           <section class="form">
             <h2 class="visually-hidden">Фильтр товаров, форма для заполнения данных</h2>
             <p class="form__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
@@ -123,7 +123,7 @@
                   <label for="telephone"></label>
                   <input class="data-person__input" type="tel" name="phone" id="telephone" placeholder="+7 XXX XX XX*" required>
                   <!-- icon-phone -->
-                  <input class="data-person__input data-person__input--phone" type="image" src="">
+                  <input class="data-person__input data-person__input--phone" type="image" src="img/icon-phone.svg">
                 </div>
               </fieldset>
               <fieldset class="form__email">
@@ -132,7 +132,7 @@
                   <label for="e-mail"></label>
                   <input class="data-person__input" type="email" name="email" id="e-mail" placeholder="Ваш Email*" required>
                   <!-- icon-envelope -->
-                  <input class="data-person__input data-person__input--email" type="image" src="">
+                  <input class="data-person__input data-person__input--email" type="image" src="img/icon-mail.svg">
                 </div>
               </fieldset>
               <fieldset class="form__feedback">
@@ -168,11 +168,10 @@
             </li>
           </ul>
         </nav>
-        <p class="page-footer__copyright copyright">
-          <span class="copyright__text">Разработано</span>
-          <a class="copyright__link button" href="https://htmlacademy.ru/intensive/adaptive">
+  	    <p class="page-footer__copyright copyright">
+          <a class="copyright__link copyright__link--icon" href="https://htmlacademy.ru/intensive/adaptive">
+            <span class="copyright__text">Разработано</span>
             <span class="visually-hidden">HTML Academy</span>
-            <!-- <svg></svg> -->
           </a>
         </p>
       </footer>

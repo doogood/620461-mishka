@@ -37,10 +37,10 @@
               <li class="site-list__item">
                 <a href="form.html">Вязание на заказ</a>
               </li>
-              <li class="site-list__item site-list__item--icon-magnifier">
+              <li class="site-list__item site-list__item--magnifier">
                 <a href="#">Поиск по сайту</a>
               </li>
-              <li class="site-list__item site-list__item--icon-basket">
+              <li class="site-list__item site-list__item--basket">
                 <a href="#">Корзина: пока пуста</a>
               </li>
             </ul>
@@ -50,15 +50,15 @@
 
       <main>
         <section class="catalog">
-          <h1 class="visually-hidden">Список товаров</h1>
+          <h1 class="catalog__title">Каталог товаров</h1>
           <ul class="catalog__list">
             <li class="catalog__item">
               <a href="catalog-item-1.html">
-                <img class="catalog__item--image"src="http://placehold.it/260x195" alt="Вязаный зайчик тёмно-голубого цвета»" width="260" height="195">
+                <img class="catalog__item--image"src="img/photo-hare-mobile@1x.jpg" alt="Вязаный зайчик тёмно-голубого цвета»" width="260" height="195">
                 <h2 class="catalog__item--title">Зайчик-попрыгайчик</h2>
               </a>
               <p class="catalog__item--text">Рост 30 см, вес 200 г</p>
-              <p class="catalog__item--price">
+              <p class="catalog__item--price catalog__item--icon">
                 <b>1 200 руб.</b>
                 <!-- icon-basket -->
                 <a class="catalog__item--button" href="size.html"></a>
@@ -68,11 +68,11 @@
 
             <li class="catalog__item">
               <a href="catalog-item-2.html">
-                <img class="catalog__item--image"src="http://placehold.it/260x195" alt="Вязаная корзинка бело-персикового цвета. В ней 3 свертка белья" width="260" height="195">
+                <img class="catalog__item--image"src="img/photo-bowl-mobile@1x.jpg" alt="Вязаная корзинка бело-персикового цвета. В ней 3 свертка белья" width="260" height="195">
                 <h2 class="catalog__item--title">Корзинка для белья</h2>
               </a>
               <p class="catalog__item--text">Диаметр 15 см, высота 10 см</p>
-              <p class="catalog__item--price">
+              <p class="catalog__item--price catalog__item--icon">
                 <b>690 руб.</b>
                 <!-- icon-basket -->
                 <a class="catalog__item--button" href="size.html"></a>
@@ -82,11 +82,11 @@
 
             <li class="catalog__item">
               <a href="catalog-item-3.html">
-                <img class="catalog__item--image"src="http://placehold.it/260x195" alt="Вязаная корзинка бело-фисташкового цвета. В ней шесть милых маленьких игрушек" width="260" height="195">
+                <img class="catalog__item--image"src="img/photo-toys-mobile@1x.jpg" alt="Вязаная корзинка бело-фисташкового цвета. В ней шесть милых маленьких игрушек" width="260" height="195">
                 <h2 class="catalog__item--title">Большая корзинка для игрушек</h2>
               </a>
               <p class="catalog__item--text">Диаметр 30 см, высота 30 см</p>
-              <p class="catalog__item--price">
+              <p class="catalog__item--price catalog__item--icon">
                 <b>1 500 руб.</b>
                 <!-- icon-basket -->
                 <a class="catalog__item--button" href="size.html"></a>
@@ -99,10 +99,10 @@
         <section class="video">
           <!-- Icon-camera in CSS -->
           <h2 class="video__title video__title--camera">Процесс производства</h2>
-          <img class="video__player--image" src="http://placehold.it/260x152" width="260" height="152" alt="Видеозапись">
           <video class="video__player">
             <source src="">
           </video>
+          <img class="video__player--image video__player--icon" src="img/video-mobile@1x.jpg" width="260" height="152" alt="Видеозапись">
           <p class="video__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
           <a class="video__button button" href="form.html">Сделать заказ</a>
         </section>
@@ -131,11 +131,10 @@
             </li>
           </ul>
         </nav>
-        <p class="page-footer__copyright copyright">
-          <span class="copyright__text">Разработано</span>
-          <a class="copyright__link button" href="https://htmlacademy.ru/intensive/adaptive">
+  	    <p class="page-footer__copyright copyright">
+          <a class="copyright__link copyright__link--icon" href="https://htmlacademy.ru/intensive/adaptive">
+            <span class="copyright__text">Разработано</span>
             <span class="visually-hidden">HTML Academy</span>
-            <!-- <svg></svg> -->
           </a>
         </p>
       </footer>

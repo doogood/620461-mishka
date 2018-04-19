@@ -1,0 +1,65 @@
+.big-title {
+  padding-top: 75px;
+  padding-bottom: 75px;
+  -webkit-margin-before: 0px;
+  -webkit-margin-after: 0px;
+
+  font-size: @body-font-size + 12px;
+  line-height: 30px;
+  text-align: center;
+
+  background-color: @footer-background-color;
+}
+
+.form {
+  -webkit-margin-before: 0px;
+  -webkit-margin-after: 0px;
+  -webkit-padding-start: 30px;
+  -webkit-padding-end: 30px;
+
+  &__description {
+    font-size: @body-font-size - 2px;
+    line-height: 24px;
+
+    color: @secondary-text-color;
+  }
+
+  &__title {
+    .font(@font-regular; @font-bold; bold);
+    font-size: @body-font-size + 2px;
+    line-height: 16px;
+    text-transform: uppercase;
+
+    color: @mint-text-color;
+  }
+
+  &__note {
+    font-size: @body-font-size - 1px;
+    line-height: 14px;
+
+    color: @secondary-text-color;
+  }
+
+  &__button {
+    -webkit-margin-before: 35px;
+    -webkit-margin-after: 57px;
+
+    background-color: @button-form-background-color;
+  }
+}
+
+.filter-type__list,
+.filter-color__list,
+.data-person__list {
+  list-style: none;
+  -webkit-padding-start: 0px;
+  -webkit-padding-end: 0px;
+}
+
+.filter-type__option,
+.filter-color__option,
+.data-person__option {
+  .font(@font-regular; @font-bold; bold);
+  font-size: @body-font-size;
+  line-height: 18px;
+}
