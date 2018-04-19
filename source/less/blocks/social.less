@@ -3,26 +3,29 @@
   padding-bottom: 30px;
   background-color: @footer-background-color;
 }
-// Когда "включаем" visually-hidden, пропадают иконки
-.social {
-  &__list {
-    display: flex;
 
-    list-style: none;
-  }
-  &__link {
-    background-repeat: no-repeat;
-  }
-  &__link--instagram {
-    background-image: url(../img/icon-insta.svg);
-    background-size: 22px 21px;
-  }
-  &__link--facebook {
-    background-image: url(../img/icon-fb.svg);
-    background-size: 15px 28px;
-  }
-  &__link--twitter {
-    background-image: url(../img/icon-twitter.svg);
-    background-size: 23px 20px;
-  }
+// Когда "включаем" visually-hidden, пропадают иконки
+.social__list {
+  display: flex;
+
+  list-style: none;
+}
+
+.social__link {
+  background-repeat: no-repeat;
+}
+
+.social__link--instagram {
+  background-image: url("../img/icon-insta.svg");
+  background-size: 22px 21px;
+}
+
+.social__link--facebook {
+  background-image: url("../img/icon-fb.svg");
+  background-size: 15px 28px;
+}
+
+.social__link--twitter {
+  background-image: url("../img/icon-twitter.svg");
+  background-size: 23px 20px;
 }

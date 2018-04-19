@@ -1,8 +1,8 @@
 .big-title {
   padding-top: 75px;
   padding-bottom: 75px;
-  -webkit-margin-before: 0px;
-  -webkit-margin-after: 0px;
+  margin-top: 0;
+  margin-bottom: 0;
 
   font-size: @body-font-size + 12px;
   line-height: 30px;
@@ -12,48 +12,48 @@
 }
 
 .form {
-  -webkit-margin-before: 0px;
-  -webkit-margin-after: 0px;
-  -webkit-padding-start: 30px;
-  -webkit-padding-end: 30px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 30px;
+  padding-right: 30px;
+}
 
-  &__description {
-    font-size: @body-font-size - 2px;
-    line-height: 24px;
+.form__description {
+  font-size: @body-font-size - 2px;
+  line-height: 24px;
 
-    color: @secondary-text-color;
-  }
+  color: @secondary-text-color;
+}
 
-  &__title {
-    .font(@font-regular; @font-bold; bold);
-    font-size: @body-font-size + 2px;
-    line-height: 16px;
-    text-transform: uppercase;
+.form__title {
+  .font(@font-regular; @font-bold; bold);
+  font-size: @body-font-size + 2px;
+  line-height: 16px;
+  text-transform: uppercase;
 
-    color: @mint-text-color;
-  }
+  color: @mint-text-color;
+}
 
-  &__note {
-    font-size: @body-font-size - 1px;
-    line-height: 14px;
+.form__note {
+  font-size: @body-font-size - 1px;
+  line-height: 14px;
 
-    color: @secondary-text-color;
-  }
+  color: @secondary-text-color;
+}
 
-  &__button {
-    -webkit-margin-before: 35px;
-    -webkit-margin-after: 57px;
+.form__button {
+  margin-top: 35px;
+  margin-bottom: 57px;
 
-    background-color: @button-form-background-color;
-  }
+  background-color: @button-form-background-color;
 }
 
 .filter-type__list,
 .filter-color__list,
 .data-person__list {
   list-style: none;
-  -webkit-padding-start: 0px;
-  -webkit-padding-end: 0px;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .filter-type__option,
