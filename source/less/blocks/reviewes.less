@@ -1,4 +1,5 @@
 .reviews__title,
+.reviews__item,
 .reviews__toggles,
 .reviews__button {
   margin-left: 30px;
@@ -13,22 +14,35 @@
   margin-bottom: 0;
 }
 
+.reviews__text {
+  font-size: @body-font-size;
+  line-height: 30px;
+  
+  color: @secondary-text-color;
+}
+
 .reviews__author-name {
-  margin-top: 35px;
+  margin-top: 30px;
+
+  font-size: @body-font-size + 2px;
+  line-height: 24px;
 }
 
 .reviews__author-email {
-  margin-top: 7px;
+  margin-top: 2px;
+
+  font-size: @body-font-size + 2px;
+  line-height: 30px;
 }
 
 .reviews__toggles {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 40px;
+  padding-bottom: 47px;
 }
 
 .reviews__toggle--left {
   position: relative;
-  left: 40px;
+  left: 32px;
 
   background-size: 20px 19px;
   background-color: #ffffff;
@@ -38,7 +52,7 @@
 
 .reviews__toggle--right {
   position: relative;
-  left: 100px;
+  left: 95px;
 
   background-size: 20px 19px;
   background-color: #ffffff;

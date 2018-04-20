@@ -1,38 +1,90 @@
-.intro__header {
-  position: relative;
-}
-
 .intro__title {
-  position: absolute;
-  top: 50px;
-  left: 70px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 68px;
 
+  width: 317px;
+  height: 212px;
+
+  font-size: @body-font-size + 12px;
   text-align: center;
   line-height: 30px;
 }
 
+.intro__image {
+  background-image: url("../img/hero-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: -130px -20px;
+  background-size: 320px 240px cover;
+}
+
 .intro__links {
-  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
   padding-left: 0;
+
+  list-style: none;
   vertical-align: middle;
 }
 
 .intro__links a {
+  position: absolute;
   width: 150px;
   margin-left: 30px;
 
   .font(@font-regular; @font-bold; bold);
   font-size: @body-font-size + 4px;
   line-height: 24px;
-  position: absolute;
 
   color: @intro-link-text-color;
 }
 
-.intro__link:nth-child(1) {
-  background-color: @intro-link-background-color-lamp;
-}
+.intro__link {
+  position: relative;
+  padding-top: 25px;
+  padding-bottom: 77px;
 
-.intro__link:nth-child(2) {
-  background-color: @intro-link-background-color-lego;
+  &--lamp {
+    background-color: @intro-link-background-color-lamp;
+
+    ::before {
+      content: url("../img/icon-interior.svg");
+      position: absolute;
+
+      display: table;
+      width: 60px;
+      height: 60px;
+      right: -81%;
+      top: 60%;
+
+      transform: translateY(-50%);
+
+      background-repeat: no-repeat;
+      background-size: 40px 62px;
+
+      opacity: 0.2;
+    }
+  }
+
+  &--lego {
+    background-color: @intro-link-background-color-lego;
+
+    ::before {
+      content: url("../img/icon-toy.svg");
+      position: absolute;
+
+      display: table;
+      width: 60px;
+      height: 20px;
+      right: -75%;
+      top: 60%;
+
+      transform: translateY(-50%);
+
+      background-repeat: no-repeat;
+      background-size: 60px 60px;
+
+      opacity: 0.2;
+    }
+  }
 }
