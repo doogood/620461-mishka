@@ -64,7 +64,7 @@ content="width=device-width,initial-scale=1">
               <p class="catalog__item--price catalog__item--icon">
                 <b>1 200 руб.</b>
                 <!-- icon-basket -->
-                <a class="catalog__item--button" href="size.html"></a>
+                <a href="size.html"></a>
                 <!-- after click - modal window -->
               </p>
             </li>
@@ -92,7 +92,7 @@ content="width=device-width,initial-scale=1">
               <p class="catalog__item--price catalog__item--icon">
                 <b>1 500 руб.</b>
                 <!-- icon-basket -->
-                <a class="catalog__item--button" href="size.html"></a>
+                <a href="size.html"></a>
                 <!-- after click - modal window -->
               </p>
             </li>
@@ -100,12 +100,19 @@ content="width=device-width,initial-scale=1">
         </section>
 
         <section class="video">
-          <!-- Icon-camera in CSS -->
-          <h2 class="video__title video__title--camera">Процесс производства</h2>
+          <h2 class="video__title">Процесс производства</h2>
+          <div class="video__icon video__icon--camera">
+            <div></div>
+          </div>
           <video class="video__player">
             <!-- <source src=""> -->
           </video>
-          <img class="video__player--image video__player--icon" src="img/video-mobile@1x.jpg" width="260" height="152" alt="Видеозапись">
+          <div class="video__image video__image--play" >
+            <div>
+              <div></div>
+            </div>
+          <img src="img/video-mobile@1x.jpg" width="260" height="152" alt="Видеозапись">
+          </div>
           <p class="video__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
           <a class="video__button button" href="form.html">Сделать заказ</a>
         </section>

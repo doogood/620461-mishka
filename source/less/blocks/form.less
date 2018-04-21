@@ -1,16 +1,3 @@
-.big-title {
-  padding-top: 75px;
-  padding-bottom: 75px;
-  margin-top: 0;
-  margin-bottom: 0;
-
-  font-size: @body-font-size + 12px;
-  line-height: 30px;
-  text-align: center;
-
-  background-color: @footer-background-color;
-}
-
 .form {
   margin-top: 0;
   margin-bottom: 0;
@@ -19,6 +6,9 @@
 }
 
 .form__description {
+  margin-top: 22px;
+  margin-bottom: 25px;
+
   font-size: @body-font-size - 2px;
   line-height: 24px;
 
@@ -34,6 +24,10 @@
   color: @mint-text-color;
 }
 
+.form__border {
+  border: none;
+}
+
 .form__note {
   font-size: @body-font-size - 1px;
   line-height: 14px;
@@ -41,25 +35,13 @@
   color: @secondary-text-color;
 }
 
+.form__textarea {
+  border: 2px solid #444444;
+}
+
 .form__button {
   margin-top: 35px;
   margin-bottom: 57px;
 
   background-color: @button-form-background-color;
-}
-
-.filter-type__list,
-.filter-color__list,
-.data-person__list {
-  list-style: none;
-  padding-left: 0;
-  padding-right: 0;
-}
-
-.filter-type__option,
-.filter-color__option,
-.data-person__option {
-  .font(@font-regular; @font-bold; bold);
-  font-size: @body-font-size;
-  line-height: 18px;
 }
