@@ -90,43 +90,57 @@
 }
 
 @media (min-width: @tablet-width) {
+  // временно
+  body {
+    background-color: #a690b3;
+  }
+
   .intro {
     display: flex;
     flex-direction: column;
-    width: auto;
+    // width: auto;
+    // margin: 0 auto;
+  }
+
+  .intro__image {
+    // width: 768px;
+    // padding-left: 0;
+    // padding-right: 0;
     margin: 0 auto;
+    background-image: url("../img/hero-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: -150px -50px;
+    background-size: cover;
   }
 
   .intro__title {
-    width: 668px;
+    width: 670px;
     height: 590px;
+    padding-left: 50px;
+    padding-right: 0;
+    margin: 0 auto;
+    // margin-top: 100px;
+    margin-bottom: 0;
+    padding-top: 85px;
+
+    font-size: @body-font-size + 28px;
+    text-align: center;
+    line-height: 50px;
+  }
+
+  .intro__title br {
+    display: none;
   }
 
   .intro__list {
-    // display: block;
     display: flex;
-    width: 330px;
-
-    // flex-grow: 1;
-    // flex-basis: 330px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 
   .intro__link {
     display: block;
-    // display: flex;
-    width: 330px;
-
-    // flex-grow: 1;
     flex-basis: 330px;
-  }
-
-  .intro__image {
-
-    margin: 0 auto;
-    background-image: url("../img/hero-mobile@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: -180px -20px;
-    background-size: cover;
   }
 }
 

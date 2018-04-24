@@ -38,10 +38,25 @@
     width: 640px;
     margin: 0 auto;
   }
+
+  .main-nav__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .main-nav__wrapper {
     width: 950px;
+  }
+
+  .main-nav__toggle {
+    display: none;
   }
 }

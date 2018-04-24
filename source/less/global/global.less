@@ -13,6 +13,7 @@ body {
   line-height: 21px;
 
   background-color: @body-background;
+  margin: 0 auto;
 }
 
 a {
@@ -50,21 +51,26 @@ img {
   cursor: pointer;
 }
 
-// .visually-hidden {
-//   position: absolute;
-//   overflow: hidden;
-//   clip: rect(0 0 0 0);
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
 
-//   width: 1px;
-//   height: 1px;
-//   margin: -1px;
-//   padding: 0;
-//   border: 0;
-// }
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
 
 @media (min-width: @tablet-width) {
   .container {
-    width: @tablet-width;
-    margin: 0 auto;
+    width: 668px;
+    // max-width: 668px;
+    // margin: 0 auto;
+    // padding-left: 50px;
+    // padding-right: 50px;
+    // margin-left: auto;
+    // margin-right: auto;
   }
 }

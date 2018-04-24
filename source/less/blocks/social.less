@@ -1,63 +1,66 @@
 .social {
   padding-top: 25px;
-  padding-bottom: 30px;
+  // padding-bottom: 30px;
   background-color: @footer-background-color;
 }
 
-// FIXME: Когда "включаем" visually-hidden, пропадают иконки
-// Если нет решения,  то в HTML сделаю через SVG
-
 .social__list {
   display: flex;
-
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 15px;
+  padding-bottom: 30px;
   list-style: none;
 }
 
 .social__link {
   position: relative;
 
+  display: block;
+  width: 35px;
+  height: 37px;
   background-repeat: no-repeat;
 
   &--instagram {
-    ::before {
+    &::before {
       content: url("../img/icon-insta.svg");
       position: absolute;
 
       display: table;
       width: 35px;
       height: 37px;
-      left: 60%;
-      top: -60%;
+      left: 133%;
+      top: -30%;
 
       background-size: 22px 21px;
     }
   }
 
   &--facebook {
-    ::before {
+    &::before {
       content: url("../img/icon-fb.svg");
       position: absolute;
 
       display: table;
       width: 35px;
       height: 37px;
-      left: 50%;
-      top: -90%;
+      left: 214%;
+      top: -47%;
 
       background-size: 15px 28px;
     }
   }
 
   &--twitter {
-    ::before {
+    &::before {
       content: url("../img/icon-twitter.svg");
       position: absolute;
 
       display: table;
       width: 35px;
       height: 37px;
-      left: 40%;
-      top: -60%;
+      left: 270%;
+      top: -30%;
 
       background-size: 23px 20px;
     }
