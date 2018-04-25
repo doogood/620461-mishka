@@ -62,8 +62,8 @@ content="width=device-width,initial-scale=1">
         <h1 class="visually-hidden">Магазин «Мишка» - вязаные товары</h1>
 
         <section class="intro">
-          <header class="intro__header">
-            <h2 class="intro__title intro__image">Милые штуки
+          <header class="intro__header intro__image">
+            <h2 class="intro__title">Милые штуки
               <br>ручной
               <br>работы для дома</h2>
           </header>
@@ -78,8 +78,10 @@ content="width=device-width,initial-scale=1">
         </section>
 
         <section class="top-product">
-          <h2 class="top-product__title">Вязаные корзинки</h2>
-          <p class="top-product__text">Товар недели</p>
+          <div class="top-product__wrapper">
+            <h2 class="top-product__title">Вязаные корзинки</h2>
+            <p class="top-product__text">Товар недели</p>
+          </div>
           <p class="top-product__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
           </p>
           <table class="top-product__options">
@@ -134,18 +136,20 @@ content="width=device-width,initial-scale=1">
         </section>
 
         <section class="reviewes">
-          <h2 class="reviews__title">Отзывы</h2>
-          <blockquote class="reviews__item">
-            <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
-            </p>
-            <p class="reviews__author-name">
-              <strong>Анастасия Красильникова</strong>
-            </p>
-            <p class="reviews__author-email">
-              @misssssiskras
-            </p>
-          </blockquote>
-          <p class="reviews__toggles">
+          <div class="reviewes__image">
+            <h2 class="reviews__title">Отзывы</h2>
+            <blockquote class="reviews__item">
+              <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
+              </p>
+              <p class="reviews__author-name">
+                <strong>Анастасия Красильникова</strong>
+              </p>
+              <p class="reviews__author-email">
+                @misssssiskras
+              </p>
+            </blockquote>
+
+          <div class="reviews__toggles">
             <button class="reviews__toggle--left" type="button">
               <svg version="1.1" id="Layer_3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="26" viewBox="0 0 50 26.003" enable-background="new 0 0 50 26.003" xml:space="preserve">
                 <polygon points="50,11.002 7.659,11.002 15.833,2.828 13.005,0 0,12.998 0.003,13.001 0,13.005 13.005,26.003 15.833,23.175 7.661,15.002 50,15.002 "/>
@@ -158,8 +162,9 @@ content="width=device-width,initial-scale=1">
               </svg>
             </button>
             <!-- <include src="img/icon-right-arrow.svg"></include> -->
-          </p>
+          </div>
           <a class="reviews__button button" href="review.html">Написать</a>
+        </div>
         </section>
       </main>
 

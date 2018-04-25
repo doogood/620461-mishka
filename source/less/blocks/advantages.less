@@ -116,3 +116,68 @@
     }
   }
 }
+
+@media (min-width: @tablet-width) {
+  .advantages {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .advantages__title {
+    margin-top: 0;
+
+    font-size: @body-font-size + 28px;
+    line-height: 50px;
+  }
+
+  .advantages__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .advantages__item {
+    width: 300px;
+    padding-top: 48px;
+    padding-bottom: 105px;
+    padding-right: 30px;
+
+    &--eco {
+      width: 200px;
+      order: 1;
+    }
+
+    &--price {
+      width: 230px;
+      order: 3;
+    }
+
+    &--likes {
+      width: 210px;
+      order: 5;
+    }
+
+    &--with-love {
+      width: 220px;
+      margin-right: 80px;
+
+      order: 2;
+    }
+
+    &--domestic-manufacturer {
+      order: 4;
+    }
+
+    &--gift-pack {
+      width: 220px;
+      margin-right: 80px;
+
+      order: 6;
+    }
+
+    &--text {
+      font-size: @body-font-size + 5px;
+      line-height: 22px;
+    }
+  }
+}
