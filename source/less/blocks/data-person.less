@@ -6,23 +6,26 @@
 
 .data-person__option {
   .font(@font-regular; @font-bold; bold);
-  font-size: @body-font-size;
+  font-size: @body-font-size + 2px;
   line-height: 18px;
 }
 
 .data-person__input {
   position: relative;
+  font-size: @body-font-size + 2px;
+  line-height: 18px;
 
   &--phone {
-    top: 5px;
-    left: 40px;
+    position: absolute;
+    top: 201%;
+    left: 64%;
 
     opacity: 0.2;
   }
 
   &--email {
     top: 12px;
-    left: 37px;
+    left: 7%;
 
     opacity: 0.2;
   }
