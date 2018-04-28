@@ -30,20 +30,9 @@
     margin: 0 auto;
   }
 
-  .main-nav__wrapper {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 640px;
-    margin: 0 auto;
-  }
-
   .main-nav__list {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    margin-left: 50px;
+    margin-right: 50px;
   }
 
   .main-nav__toggle {
@@ -53,7 +42,7 @@
 
 @media (min-width: @desktop-width) {
   .main-nav__wrapper {
-    width: 950px;
+    width: 768px;
   }
 
   .main-nav__toggle {
@@ -61,6 +50,10 @@
   }
 
   .main-nav__list {
-    margin-left: 0;
+    margin-left: 50px;
+    margin-right: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
 }

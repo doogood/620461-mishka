@@ -1,7 +1,6 @@
 .page-header {
   position: relative;
   display: flex;
-  // flex-direction: column;
   padding-top: 22px;
   padding-bottom: 22px;
 }
@@ -21,13 +20,25 @@
 
 @media (min-width: @tablet-width) {
   .page-header {
+    width: 668px;
     display: flex;
     flex-direction: row;
     height: 90px;
+    position: relative;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
   .page-header__logo {
     // height: 90px;
+  }
+
+  // вставить логотип
+  .page-header__logo-image {
+    // top: 22px;
+    left: 50px;
+    // width: 86px;
+    // height: 35px;
   }
 }
 

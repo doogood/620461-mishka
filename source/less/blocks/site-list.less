@@ -3,15 +3,6 @@
   padding-top: 30px;
   padding-bottom: 30px;
 
-  &--link {
-    .font(@font-regular; @font-bold; bold);
-    font-size: @body-font-size + 2px;
-    line-height: 24px;
-    vertical-align: middle;
-
-    color: @primary-text-color;
-  }
-
   &--magnifier {
     ::before {
       position: absolute;
@@ -53,11 +44,103 @@
       opacity: 0.2;
     }
   }
+
+  &--delivery-hidden {
+    display: none;
+
+    // position: absolute;
+    // overflow: hidden;
+    // clip: rect(0 0 0 0);
+
+    // width: 1px;
+    // height: 1px;
+    // margin: -1px;
+    // padding: 0;
+    // border: 0;
+
+  }
+}
+
+.site-list__link {
+  .font(@font-regular; @font-bold; bold);
+  font-size: @body-font-size + 2px;
+  line-height: 24px;
+  vertical-align: middle;
+
+  color: @primary-text-color;
 }
 
 @media (min-width: @tablet-width) {
   .site-list {
-    width: 550px; // или 500?
+      width: 668px;
+      margin-left: 0;
+      margin-left: 50px;
+      margin-right: 50px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+  }
+
+  .site-list__item {
+    padding-bottom: 0;
+
+    &--catalog {
+      order: 3;
+      margin-left: 190px;
+    }
+
+    &--form {
+      order: 4;
+    }
+
+    &--magnifier {
+      order: 1;
+
+      left: 40%;
+
+      transform: translateY(7%);
+    }
+
+    &--basket {
+      order: 2;
+      display: flex;
+
+      ::after {
+        content: "Бесплатная доставка по России";
+        position: relative;
+        display: table;
+        width: 330px;
+
+        // transform: translateY(220%);
+
+        .font(@font-regular);
+        font-size: @body-font-size;
+        line-height: 24px;
+
+        color: @secondary-text-color;
+      }
+    }
+
+    &--delivery-hidden {
+      display: flex;
+      order: 5;
+    }
+  }
+
+  .site-list__link {
+    &--search-hidden {
+      color: transparent;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+
+      width: 1px;
+      height: 1px;
+      margin: -1px;
+      padding: 0;
+      border: 0;
+    }
   }
 }
 

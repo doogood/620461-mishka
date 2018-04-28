@@ -37,21 +37,20 @@ content="width=device-width,initial-scale=1">
           </button>
           <div class="main-nav__wrapper">
             <ul class="main-nav__list site-list">
-              <li class="site-list__item">
-                <a class="site-list__item--link" href="catalog.html">Каталог товаров</a>
+              <li class="site-list__item site-list__item--catalog">
+                <a class="site-list__link" href="catalog.html">Каталог товаров</a>
               </li>
-              <li class="site-list__item">
-                <a class="site-list__item--link" href="form.html">Вязание на заказ</a>
+              <li class="site-list__item site-list__item--form">
+                <a class="site-list__link" href="form.html">Вязание на заказ</a>
               </li>
               <li class="site-list__item site-list__item--magnifier">
-                <!-- Icon-magnifier in CSS -->
-                <a class="site-list__item--link" href="#">Поиск по сайту</a>
-                <!-- <include src="img/icon-search.svg"></include> -->
+                <a class="site-list__link site-list__link--search-hidden" href="#">Поиск по сайту</a>
               </li>
               <li class="site-list__item site-list__item--basket">
-                <!-- Icon-basket in CSS -->
-                <a class="site-list__item--link" href="#">Корзина: пока пуста</a>
-                <!-- <include src="img/icon-cart.svg"></include> -->
+                <a class="site-list__link" href="#">Корзина: пока пуста</a>
+              </li>
+              <li class="site-list__item site-list__item--delivery-hidden">
+                <span>Бесплатная доставка по России</span>
               </li>
             </ul>
           </div>
@@ -113,23 +112,18 @@ content="width=device-width,initial-scale=1">
               <p class="advantages__item--text">Экологически чистые материалы</p>
             </li>
             <li class="advantages__item advantages__item--price">
-              <!-- <include src="img/icon-feature-money.svg"></include> -->
               <p class="advantages__item--text">Скандинавский стиль по российской цене</p>
             </li>
             <li class="advantages__item advantages__item--likes">
-              <!-- <include src="img/icon-feature-heart.svg"></include> -->
               <p class="advantages__item--text">Увеличивает лайки на фотографиях</p>
             </li>
             <li class="advantages__item advantages__item--with-love">
-              <!-- <include src="img/icon-feature-ball.svg"></include> -->
               <p class="advantages__item--text">Связано вручную с любовью и умилением</p>
             </li>
             <li class="advantages__item advantages__item--domestic-manufacturer">
-              <!-- <include src="img/icon-feature-rocket.svg"></include> -->
               <p class="advantages__item--text">Поддержка отечественного производителя</p>
             </li>
             <li class="advantages__item advantages__item--gift-pack">
-              <!-- <include src="img/icon-feature-gift.svg"></include> -->
               <p class="advantages__item--text">Поставляется в подарочной упаковке</p>
             </li>
           </ul>
@@ -155,13 +149,11 @@ content="width=device-width,initial-scale=1">
                 <polygon points="50,11.002 7.659,11.002 15.833,2.828 13.005,0 0,12.998 0.003,13.001 0,13.005 13.005,26.003 15.833,23.175 7.661,15.002 50,15.002 "/>
               </svg>
             </button>
-            <!-- <include src="img/icon-left-arrow.svg"></include> -->
             <button class="reviews__toggle--right" type="button">
               <svg version="1.1" id="Layer_4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="26" viewBox="0 0 50 26.003" enable-background="new 0 0 50 26.003" xml:space="preserve">
                 <polygon points="0,11.002 42.341,11.002 34.166,2.828 36.995,0 50,12.998 49.996,13.001 50,13.005 36.995,26.003 34.166,23.175 42.339,15.002 0,15.002 "/>
               </svg>
             </button>
-            <!-- <include src="img/icon-right-arrow.svg"></include> -->
           </div>
           <a class="reviews__button button" href="review.html">Написать</a>
         </div>
@@ -171,15 +163,19 @@ content="width=device-width,initial-scale=1">
       <footer class="page-footer">
         <div class="page-footer__contacts contacts">
           <b class="contacts__title">Контакты</b>
-          <p class="contacts__email">
-            <span>e-mail:</span>
-            <span>info@mimimishkashop.ru</span>
-          </p>
-          <p class="contacts__address">
-            <span>адрес:</span>
-            <span class="contacts__address--value">г. Санкт-Петербург, ул. Большая Конюшенная, <br>д. 19/8, офис 101
-            </span>
-          </p>
+          <div class="contacts__wrapper">
+            <p class="contacts__email">
+              <span>e-mail:</span>
+              <span class="contacts__email--value">info@mimimishkashop.ru</span>
+            </p>
+            <p class="contacts__address">
+              <span>адрес:</span>
+              <span class="contacts__address--value">г. Санкт-Петербург,
+                <br> ул. Большая Конюшенная,
+                <br>д. 19/8, офис 101
+              </span>
+            </p>
+          </div>
         </div>
         <div class="page-footer__map">
           <h2 class="visually-hidden">Магазин «Мишка» на карте</h2>
@@ -192,19 +188,16 @@ content="width=device-width,initial-scale=1">
             <li class="social__item">
               <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">
                 <span class="visually-hidden">Инстаграм</span>
-                <!-- <include src="img/icon-insta.svg"></include> -->
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
                 <span class="visually-hidden">Фейсбук</span>
-                <!-- <include src="img/icon-fb.svg"></include> -->
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru">
                 <span class="visually-hidden">Твиттер</span>
-                <!-- <include src="img/icon-twitter.svg"></include> -->
               </a>
             </li>
           </ul>
