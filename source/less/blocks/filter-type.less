@@ -1,11 +1,30 @@
 .filter-type__list {
-  list-style: none;
   padding-left: 0;
   padding-right: 0;
+
+  list-style: none;
 }
 
 .filter-type__option {
   .font(@font-regular; @font-bold; bold);
   font-size: @body-font-size + 2px;
   line-height: 18px;
+}
+
+@media (min-width: @tablet-width) {
+  .filter-type__option {
+    margin-top: -17px;
+    margin-bottom: 75px;
+    margin-left: 76px;
+
+    font-size: @body-font-size + 4px;
+  }
+
+  .filter-type__list {
+    margin-bottom: -17px;
+  }
+
+  .filter-color {
+    background-color: @footer-background-color;
+  }
 }

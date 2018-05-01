@@ -1,13 +1,13 @@
 .form {
   margin-top: 0;
   margin-bottom: 0;
-  padding-left: 30px;
-  padding-right: 30px;
+  margin-left: 30px;
+  margin-right: 30px;
 }
 
 .form__description {
   margin-top: 25px;
-  margin-bottom: 25px;
+  margin-bottom: 23px;
 
   font-size: @body-font-size - 2px;
   line-height: 24px;
@@ -16,34 +16,71 @@
 }
 
 .form__title {
+  width: 80px;
+  margin-left: -3px;
+
   .font(@font-regular; @font-bold; bold);
   font-size: @body-font-size + 2px;
   line-height: 16px;
   text-transform: uppercase;
 
   color: @mint-text-color;
+
+  &--wrapper {
+    display: flex;
+  }
+
+  &--line {
+    width: 200px;
+    margin-left: -20px;
+
+    border: 0;
+    border-bottom: 1px solid #62d1ba;
+  }
+
+  &--line-short {
+    width: 180px;
+    margin-left: 0;
+  }
 }
 
 .form__border {
   padding-left: 0;
+  padding-right: 0;
 
   border: none;
+  // border-top: 1px solid #62d1ba;
+}
+
+.form__input-wrapper {
+  position: relative;
+}
+// не получается подправить текст
+.form__textarea {
+  width: 240px;
+  height: 120px;
+  margin-top: 20px;
+  margin-left: -3px;
+  padding-top: 15px;
+  padding-left: 14px;
+
+  border: 2px solid #444444;
+  resize: none;
 }
 
 .form__note {
+  margin-top: 3px;
+  margin-left: -3px;
+
   font-size: @body-font-size - 1px;
   line-height: 14px;
 
   color: @secondary-text-color;
 }
 
-.form__textarea {
-  border: 2px solid #444444;
-}
-
 .form__button {
-  margin-top: 35px;
-  margin-bottom: 57px;
+  margin-top: 33px;
+  margin-bottom: 55px;
   width: 260px;
   height: 52px;
 
@@ -51,4 +88,55 @@
   line-height: 16px;
 
   background-color: @button-form-background-color;
+}
+
+@media (min-width: @tablet-width) {
+  .form {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .form__description {
+    padding-right: 50px;
+    padding-left: 50px;
+    margin-top: 78px;
+    margin-bottom: 0;
+
+    font-size: @body-font-size + 2px;
+    line-height: 30px;
+  }
+
+  .form__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 70px;
+    padding-right: 50px;
+    padding-left: 50px;
+
+    &--tablet {
+      // margin-top: 20px;
+      // padding-top: 15px;
+      // padding-left: 0;
+
+      background-color: @footer-background-color;
+    }
+  }
+
+  .form__border {
+    border-top: none;
+  }
+
+  .form__title {
+    display: flex;
+    margin-right: 90px;
+    margin-left: 0;
+
+    &--wrapper hr {
+      display: none;
+    }
+
+    &--color {
+      margin-top: -8px;
+    }
+  }
 }

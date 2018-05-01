@@ -9,3 +9,50 @@
   font-size: @body-font-size + 2px;
   line-height: 18px;
 }
+
+@media (min-width: @tablet-width) {
+  .filter-color {
+    background-color: @footer-background-color;
+  }
+
+  .filter-color__list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 230px;
+    margin-bottom: -24px;
+  }
+
+  .filter-color__option {
+    margin-top: -25px;
+    margin-bottom: 83px;
+    margin-left: 76px;
+    margin-right: 75px;
+
+    font-size: @body-font-size + 4px;
+
+    &--white {
+      order: 1;
+    }
+
+    &--gray {
+      order: 4;
+    }
+
+    &--tiffani {
+      order: 2;
+    }
+
+    &--black {
+      order: 5;
+    }
+
+    &--pink {
+      order: 3;
+    }
+
+    &--orange {
+      order: 6;
+    }
+  }
+}

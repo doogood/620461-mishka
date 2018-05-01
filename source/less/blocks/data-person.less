@@ -1,32 +1,70 @@
 .data-person__list {
-  list-style: none;
   padding-left: 0;
   padding-right: 0;
+  margin-left: -3px;
+  margin-bottom: 23px;
+
+  list-style: none;
 }
 
 .data-person__option {
+  margin-top: 24px;
+
   .font(@font-regular; @font-bold; bold);
   font-size: @body-font-size + 2px;
   line-height: 18px;
 }
 
 .data-person__input {
-  position: relative;
+  width: 260px;
+  margin-top: 15px;
+  margin-bottom: -2px;
+  padding-bottom: 17px;
+
   font-size: @body-font-size + 2px;
   line-height: 18px;
 
-  &--phone {
-    position: absolute;
-    top: 201%;
-    left: 64%;
+  border: none;
+  border-bottom: 2px solid @primary-text-color;
 
+  &--phone {
+    width: 25px;
+    height: 24px;
+    position: absolute;
+    top: 0%;
+    left: 88%;
+
+    border: none;
     opacity: 0.2;
   }
 
   &--email {
-    top: 12px;
-    left: 7%;
+    width: 42px;
+    height: 31px;
+    position: absolute;
+    top: 0%;
+    left: 85%;
 
+    border: none;
     opacity: 0.2;
+  }
+}
+
+.data-person__input-phone {
+  margin-left: -3px;
+  margin-top: 17px;
+  margin-bottom: 23px;
+}
+
+.data-person__input-email {
+  margin-left: -3px;
+  margin-top: 17px;
+  margin-bottom: 23px;
+}
+
+@media (min-width: @tablet-width) {
+  .data-person__input-phone,
+  .data-person__input-email {
+    background-color: @footer-background-color;
   }
 }
