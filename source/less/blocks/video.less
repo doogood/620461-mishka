@@ -23,18 +23,18 @@
 
   &--camera {
     ::before {
-      position: absolute;
       content: url("../img/icon-video.svg");
+      position: absolute;
+      right: 67%;
 
       display: table;
       width: 50px;
       height: 40px;
-      right: 67%;
-
-      transform: translateY(-170%);
 
       background-repeat: no-repeat;
       background-size: 46px 36px;
+
+      transform: translateY(-170%);
     }
   }
 }
@@ -52,18 +52,18 @@
 
   &--play {
     ::before {
-      position: absolute;
       content: url("../img/icon-play.svg");
+      position: absolute;
+      right: 50%;
 
       display: table;
       width: 50px;
       height: 40px;
-      right: 50%;
-
-      transform: translateY(45%);
 
       background-repeat: no-repeat;
       background-size: 101px 77px;
+
+      transform: translateY(45%);
     }
   }
 }
@@ -80,14 +80,12 @@
 
   font-size: @body-font-size - 2px;
   line-height: 24px;
-
   color: @secondary-text-color;
 }
 
 .video__button {
   width: 188px;
   height: 48px;
-
   margin-top: 26px;
   margin-bottom: 30px;
 }
@@ -115,10 +113,10 @@
   }
 
   .video__title {
-    width: 400px;
     display: flex;
     flex-direction: column;
     order: 2;
+    width: 400px;
     margin-top: 15px;
     padding-left: 108px;
 
@@ -159,7 +157,6 @@
   .video__button {
     width: 580px;
     height: 48px;
-
     margin-top: 35px;
     margin-bottom: 45px;
   }

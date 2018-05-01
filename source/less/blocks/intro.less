@@ -1,16 +1,15 @@
 .intro__title {
+  width: 317px;
+  height: 212px;
   margin-top: 0;
   margin-bottom: 0;
   padding-top: 68px;
   padding-left: 5px;
   padding-right: 0;
 
-  width: 317px;
-  height: 212px;
-
   font-size: @body-font-size + 12px;
-  text-align: center;
   line-height: 30px;
+  text-align: center;
 }
 
 .intro__image {
@@ -31,6 +30,7 @@
 
 .intro__links {
   position: absolute;
+
   width: 150px;
   margin-left: 30px;
 
@@ -43,6 +43,7 @@
 
 .intro__link {
   position: relative;
+
   padding-top: 25px;
   padding-bottom: 78px;
 
@@ -52,19 +53,18 @@
     ::before {
       content: url("../img/icon-interior.svg");
       position: absolute;
+      top: 66%;
+      right: -82%;
 
       display: table;
       width: 60px;
       height: 60px;
-      right: -82%;
-      top: 66%;
-
-      transform: translateY(-50%);
 
       background-repeat: no-repeat;
       background-size: 40px 62px;
-
       opacity: 0.2;
+
+      transform: translateY(-50%);
     }
   }
 
@@ -74,19 +74,18 @@
     ::before {
       content: url("../img/icon-toy.svg");
       position: absolute;
+      top: 60%;
+      right: -75%;
 
       display: table;
       width: 60px;
       height: 20px;
-      right: -75%;
-      top: 60%;
-
-      transform: translateY(-50%);
 
       background-repeat: no-repeat;
       background-size: 60px 60px;
-
       opacity: 0.2;
+
+      transform: translateY(-50%);
     }
   }
 }
@@ -110,10 +109,10 @@
   .intro__title {
     width: 670px;
     height: 600px;
+    margin-bottom: 0;
     padding-left: 50px;
     padding-top: 156px;
     padding-right: 0;
-    margin-bottom: 0;
 
     font-size: @body-font-size + 28px;
     text-align: center;

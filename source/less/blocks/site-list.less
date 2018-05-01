@@ -1,47 +1,44 @@
 .site-list__item {
   position: relative;
+
   padding-top: 30px;
   padding-bottom: 30px;
 
   &--magnifier {
     ::before {
+      content: url("../img/icon-search.svg");
       position: absolute;
+      left: -10%;
+      top: 50%;
 
       display: table;
       width: 20px;
       height: 20px;
-      left: -10%;
-      top: 50%;
-
-      transform: translateY(-40%);
-
-      content: url("../img/icon-search.svg");
 
       background-repeat: no-repeat;
       background-size: 20px 19px;
-
       opacity: 0.2;
+
+      transform: translateY(-40%);
     }
   }
 
   &--basket {
     ::before {
+      content: url("../img/icon-cart.svg");
       position: absolute;
+      left: -10%;
+      top: 50%;
 
       display: table;
       width: 20px;
       height: 20px;
-      left: -10%;
-      top: 50%;
-
-      transform: translateY(-40%);
-
-      content: url("../img/icon-cart.svg");
 
       background-repeat: no-repeat;
       background-size: 20px 19px;
-
       opacity: 0.2;
+
+      transform: translateY(-40%);
     }
   }
 
@@ -55,64 +52,54 @@
   font-size: @body-font-size + 2px;
   line-height: 24px;
   vertical-align: middle;
-
   color: @primary-text-color;
 }
 
 @media (min-width: @tablet-width) {
   .site-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     width: 668px;
     margin-left: 50px;
     margin-right: 50px;
+  }
+
+  .site-list__wrapper-left {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-between;
+    width: 335px;
+  }
+
+  .site-list__wrapper-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
   }
 
   .site-list__item {
     padding-bottom: 0;
 
-    &--catalog {
-      order: 3;
-      margin-left: 190px;
-    }
-
-    &--form {
-      order: 4;
-    }
-
-    &--magnifier {
-      order: 1;
-
-      left: 40%;
-
-      transform: translateY(7%);
-    }
-
-    &--basket {
-      // display: flex;
-      order: 2;
-    }
-
     &--delivery-hidden {
       display: flex;
-      order: 5;
     }
   }
 
   .site-list__link {
     &--search-hidden {
-      color: transparent;
       position: absolute;
-      left: 50%;
-      top: 50%;
+      left: 0;
+      top: 0;
 
-      width: 1px;
-      height: 1px;
-      margin: -1px;
+      // display: block;
+      width: 85px;
+      height:  90px;
+      margin: 0;
       padding: 0;
-      border: 0;
+
+      color: transparent;
+
+      border: 1px solid #ececec;
     }
   }
 }
