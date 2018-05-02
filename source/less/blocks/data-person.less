@@ -65,8 +65,65 @@
 }
 
 @media (min-width: @tablet-width) {
+  .data-person__input {
+    width: 356px;
+    margin-bottom: -2px;
+    margin-left: 18px;
+    padding-bottom: 15px;
+    padding-left: 17px;
+
+    font-size: @body-font-size + 4px;
+
+    &--firstname {
+      width: 408px;
+    }
+
+    // &--phone {
+    //   position: absolute;
+    //   top: 0%;
+    //   left: 88%;
+
+    //   width: 25px;
+    //   height: 24px;
+
+    //   border: none;
+    //   opacity: 0.2;
+    // }
+
+    // &--email {
+    //   position: absolute;
+    //   top: 0%;
+    //   left: 85%;
+
+    //   width: 42px;
+    //   height: 31px;
+
+    //   border: none;
+    //   opacity: 0.2;
+    // }
+  }
+
   .data-person__input-phone,
   .data-person__input-email {
     background-color: @footer-background-color;
+  }
+
+  .data-person__list {
+    width: 497px;
+    margin-top: -31px;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .data-person__option {
+    margin-top: 0;
+    margin-bottom: 18px;
+
+    font-size: @body-font-size + 4px;
+
+    &--patronymic {
+      margin-bottom: 42px;
+    }
   }
 }
