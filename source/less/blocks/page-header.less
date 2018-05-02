@@ -12,12 +12,17 @@
 
 .page-header__logo-image {
   position: absolute;
-  top: 22px;
-  left: 115px;
+  top: 5.3%;
+  left: 36%;
 
   width: 86px;
   height: 35px;
   padding-bottom: 22px;
+}
+
+.page-header__logo-tablet,
+.page-header__logo-desktop {
+  display: none;
 }
 
 @media (min-width: @tablet-width) {
@@ -36,21 +41,33 @@
     display: block;
     width: 372px;
     height: 90px;
-    padding-left: 70px;
-    padding-right: 70px;
 
     border: 1px solid #ececec;
   }
 
-  // вставить логотип
   .page-header__logo-image {
-    left: 50px;
-    // top: 22px;
-    // width: 86px;
-    // height: 35px;
+    display: none;
+  }
+
+  .page-header__logo-tablet {
+    position: absolute;
+    top: 30%;
+    left: 7%;
+
+    display: block;
+    width: 113px;
+    height: 46px;
   }
 }
 
-// @media (min-width: @desktop-width) {
+@media (min-width: @desktop-width) {
+  .page-header__logo-tablet {
+    display: none;
+  }
 
-// }
+  .page-header__logo-desktop {
+    position: absolute;
+
+    display: block;
+  }
+}
