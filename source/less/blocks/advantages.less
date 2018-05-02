@@ -16,21 +16,18 @@
   list-style: none;
 }
 
+.advantages__text {
+  .font(@font-regular; @font-bold; bold);
+  font-size: @body-font-size + 2px;
+  line-height: 20px;
+}
+
 .advantages__item {
   position: relative;
 
   padding-top: 49px;
-  padding-bottom: 74px;
 
   background-repeat: no-repeat;
-
-  &--text {
-    position: absolute;
-
-    .font(@font-regular; @font-bold; bold);
-    font-size: @body-font-size + 2px;
-    line-height: 20px;
-  }
 
   &--eco {
     width: 180px;
@@ -38,8 +35,8 @@
     ::before {
       content: url("../img/icon-feature-flower.svg");
       position: absolute;
+      top: 13%;
       left: 5%;
-      top: -135%;
 
       display: table;
       width: 35px;
@@ -55,7 +52,7 @@
     ::before {
       content: url("../img/icon-feature-money.svg");
       position: absolute;
-      top: -135%;
+      top: 13%;
 
       display: table;
       width: 50px;
@@ -71,8 +68,8 @@
     ::before {
       content: url("../img/icon-feature-heart.svg");
       position: absolute;
+      top: 16%;
       left: 4%;
-      top: -120%;
 
       display: table;
       width: 35px;
@@ -88,8 +85,8 @@
     ::before {
       content: url("../img/icon-feature-ball.svg");
       position: absolute;
+      top: 15%;
       left: 2%;
-      top: -127%;
 
       display: table;
       width: 35px;
@@ -105,8 +102,8 @@
     ::before {
       content: url("../img/icon-feature-rocket.svg");
       position: absolute;
-      left: -3%;
-      top: -125%;
+      top: 16%;
+      left: -2%;
 
       display: table;
       width: 55px;
@@ -122,8 +119,8 @@
     ::before {
       content: url("../img/icon-feature-gift.svg");
       position: absolute;
+      top: 13%;
       left: 2%;
-      top: -130%;
 
       display: table;
       width: 35px;
@@ -154,74 +151,78 @@
     flex-wrap: wrap;
   }
 
+  .advantages__text {
+    font-size: @body-font-size + 5px;
+    line-height: 22px;
+  }
+
   .advantages__item {
     width: 300px;
     padding-top: 48px;
-    padding-bottom: 105px;
     padding-right: 30px;
 
     &--eco {
-      width: 200px;
       order: 1;
+      width: 210px;
 
       ::before {
+        top: 11%;
         left: 4%;
-        top: -131%;
       }
     }
 
     &--price {
       order: 3;
-      width: 230px;
+      width: 240px;
+      padding-top: 70px;
 
       ::before {
-        top: -120%;
+        top: 25%;
       }
     }
 
     &--likes {
       order: 5;
-      width: 210px;
+      width: 220px;
+      padding-top: 74px;
 
       ::before {
-        top: -108%;
-        left: 3.5%;
+        top: 28%;
+        left: 3%;
       }
     }
 
     &--with-love {
       order: 2;
+      width: 250px;
+      margin-right: 54px;
 
-      width: 220px;
-      margin-right: 84px;
+      ::before {
+        top: 13%;
+      }
     }
 
     &--domestic-manufacturer {
       order: 4;
-
       margin-right: 3px;
+      padding-top: 70px;
 
       ::before {
-        top: -110%;
+        top: 27%;
         left: -2%;
       }
     }
 
     &--gift-pack {
       order: 6;
-
-      width: 220px;
-      margin-right: 84px;
+      width: 240px;
+      margin-right: 64px;
+      padding-top: 74px;
 
       ::before {
-        top: -110%;
+        top: 25%;
         left: 1%;
       }
-    }
-
-    &--text {
-      font-size: @body-font-size + 5px;
-      line-height: 22px;
     }
   }
 }
