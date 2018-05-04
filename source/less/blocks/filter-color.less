@@ -19,6 +19,7 @@
   }
 
   .filter-color__list {
+    width: 495px;
     display: flex;
     flex-wrap: wrap;
     margin-top: 0;
@@ -26,37 +27,12 @@
   }
 
   // не получается выровнять
-  // избавилась от отрицательных маржинов, но теперь появилась проблема с блоком цвета
   .filter-color__option {
-    // flex-wrap: nowrap;
+    flex-wrap: wrap;
     margin-bottom: 55px;
     margin-left: 76px;
     margin-right: 75px;
 
     font-size: @body-font-size + 4px;
-
-    // &--white {
-    //   // order: 1;
-    // }
-
-    // &--gray {
-    //   // order: 4;
-    // }
-
-    // &--tiffani {
-    //   // order: 2;
-    // }
-
-    // &--black {
-    //   // order: 5;
-    // }
-
-    // &--pink {
-    //   // order: 3;
-    // }
-
-    // &--orange {
-    //   // order: 6;
-    // }
   }
 }
