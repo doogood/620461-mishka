@@ -156,8 +156,93 @@
 
   .video__button {
     width: 580px;
-    height: 48px;
     margin-top: 35px;
     margin-bottom: 45px;
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .video {
+    margin-left: 100px;
+    margin-right: 100px;
+    // margin-bottom: 62px;
+    // display: flex;
+    // flex-direction: column;
+  }
+
+  // .video__wrapper {
+  //   display: block;
+  //   flex-wrap: wrap;
+  //   display: -webkit-box;
+  //   flex-direction: row;
+  // }
+
+  .video__wrapper-desktop {
+    width: 350px;
+    margin-top: 170px;
+  }
+
+  // .video__icon {
+  //   &--camera {
+  //     ::before {
+  //       right: 86%;
+
+  //       transform: translateY(1220%);
+  //     }
+  //   }
+  // }
+
+  .video__title {
+    // display: flex;
+    // flex-direction: column;
+    // order: 1;
+    width: 100px;
+    margin-top: 15px;
+    padding-left: 108px;
+
+    font-size: @body-font-size + 5px;
+  }
+
+  .video__image {
+    // position: absolute;
+    // display: flex;
+    width: 682px;
+    height: 455px;
+
+    // &--play {
+    //   ::before {
+    //     top: 33.7%;
+    //     right: 50%;
+    //   }
+    // }
+
+    &--tablet {
+      display: none;
+    }
+
+    &--desktop {
+      display: flex;
+      // order: 2;
+    }
+  }
+
+  // .video__description,
+  // .video__button {
+  //   margin-left: 41px;
+  //   margin-right: 41px;
+  // }
+
+  // .video__description {
+  //   margin-top: 7px;
+
+  //   font-size: @body-font-size;
+  //   line-height: 30px;
+  // }
+
+  .video__button {
+    width: 188px;
+    // margin-top: 26px;
+    // margin-bottom: 30px;
   }
 }
