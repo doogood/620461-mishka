@@ -39,8 +39,8 @@
     ::before {
       content: url("../img/icon-flag.svg");
       position: absolute;
-      left: 92.5%;
       top: -5.8%;
+      left: 92.5%;
 
       display: table;
       width: 50px;
@@ -69,8 +69,8 @@
   .contacts__email {
     &--value {
       width: 230px;
-      padding-left: 24px;
       padding-bottom: 22px;
+      padding-left: 24px;
     }
   }
 
@@ -78,8 +78,46 @@
     &--value {
       width: 230px;
       margin-right: 28px;
-      padding-left: 25px;
       padding-bottom: 22px;
+      padding-left: 25px;
     }
   }
 }
+
+@media (min-width: @desktop-width) {
+  .contacts {
+    margin-left: 100px;
+    margin-right: 100px;
+
+    ::before {
+      left: 6%;
+      top: -3%;
+    }
+  }
+
+  .contacts__title {
+    margin-left: 168px;
+
+    font-size: @body-font-size + 38px;
+    line-height: 57px;
+  }
+
+  .contacts__wrapper {
+    flex-direction: column;
+    width: 330px;
+    margin-left: 174px;
+  }
+
+  .contacts__email {
+    &--value {
+      width: 250px;
+      padding-bottom: 0;
+      padding-left: 0;
+    }
+  }
+
+  .contacts__address {
+    margin-top: 15px;
+  }
+}
+
