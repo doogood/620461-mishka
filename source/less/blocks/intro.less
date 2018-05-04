@@ -150,6 +150,48 @@
   }
 }
 
-// @media (min-width: @desktop-width) {
+@media (min-width: @desktop-width) {
+  .intro {
+    display: flex;
+    flex-direction: column;
 
-// }
+    background-color: #f9f9f9;
+  }
+
+  .intro__image {
+    width: 768px;
+    margin: 0 auto;
+
+    background-color: #f9f9f9;
+  }
+
+  .intro__title {
+    width: 670px;
+    padding-top: 150px;
+
+    font-size: @body-font-size + 38px;
+    line-height: 57px;
+  }
+
+  .intro__list {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  .intro__link {
+    flex-basis: 525px;
+    margin-top: -122px;
+
+    &--lamp {
+      ::before {
+        right: -209%;
+      }
+    }
+
+    &--lego {
+      ::before {
+        right: -196%;
+      }
+    }
+  }
+}

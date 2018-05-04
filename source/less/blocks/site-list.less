@@ -109,16 +109,6 @@
       ::before {
         left: -30%;
         top: 80%;
-
-        display: table;
-        width: 20px;
-        height: 20px;
-
-        background-repeat: no-repeat;
-        background-size: 20px 19px;
-        opacity: 0.2;
-
-        transform: translateY(-40%);
       }
     }
   }
@@ -148,16 +138,40 @@
 
 @media (min-width: @desktop-width) {
   .site-list {
+    display: flex;
     width: 1050px;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
+  .site-list__wrapper-left {
+    width: 370px;
+    padding-top: 0;
+  }
+
+  .site-list__wrapper-right {
+    padding-top: 0;
   }
 
   .site-list__item {
-    &--new-hidden {
-      display: block;
-    }
+    padding-bottom: 0;
 
+    &--new-hidden,
     &--sale-hidden {
       display: block;
+      padding-top: 50px;
+    }
+  }
+
+  .site-list__link {
+    &--search-hidden {
+      top: 9%;
+
+      transform: translateX(285%);
+    }
+
+    &--big {
+      font-size: @body-font-size + 2px;
     }
   }
 }

@@ -226,3 +226,96 @@
     }
   }
 }
+
+
+@media (min-width: @desktop-width) {
+  .advantages {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
+  .advantages__title {
+    margin-left: 170px;
+    margin-bottom: 35px;
+
+    font-size: @body-font-size + 38px;
+    line-height: 57px;
+  }
+
+  .advantages__list {
+    width: 700px;
+    margin-left: 174px;
+  }
+
+  .advantages__item {
+    width: 300px;
+
+    padding-right: 45px;
+
+    // почему-то если не продублировать эти свойста, всё ломается
+    &--eco {
+      order: 1;
+      width: 210px;
+
+      ::before {
+        top: 11%;
+        left: 4%;
+      }
+    }
+
+    &--price {
+      order: 3;
+      width: 240px;
+      padding-top: 70px;
+
+      ::before {
+        top: 25%;
+      }
+    }
+
+    &--likes {
+      order: 5;
+      width: 220px;
+      padding-top: 74px;
+
+      ::before {
+        top: 28%;
+        left: 3%;
+      }
+    }
+
+    &--with-love {
+      order: 2;
+      width: 250px;
+      margin-right: 54px;
+
+      ::before {
+        top: 13%;
+      }
+    }
+
+    &--domestic-manufacturer {
+      order: 4;
+      margin-right: 3px;
+      padding-top: 70px;
+
+      ::before {
+        top: 27%;
+        left: -2%;
+      }
+    }
+
+    &--gift-pack {
+      order: 6;
+      width: 240px;
+      margin-right: 64px;
+      padding-top: 74px;
+
+      ::before {
+        top: 25%;
+        left: 1%;
+      }
+    }
+  }
+}
+

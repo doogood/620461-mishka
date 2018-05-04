@@ -27,6 +27,10 @@
   color: @secondary-text-color;
 }
 
+.reviews__text br {
+  display: none;
+}
+
 .reviews__author-name {
   margin-top: 27px;
   margin-bottom: 0;
@@ -166,5 +170,58 @@
     left: 66.7%;
 
     width: 170px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .reviews {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
+  .reviews__title {
+    margin-left: 170px;
+    padding-top: 72px;
+
+    font-size: @body-font-size + 38px;
+    line-height: 57px;
+  }
+
+  .reviews__item {
+    width: 770px;
+    margin-top: 50px;
+    margin-left: 174px;
+    margin-right: 50px;
+  }
+
+  .reviews__text br {
+    display: block;
+  }
+
+  .reviewes__image {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 67px;
+    margin-bottom: 230px;
+    // padding-top: 0;
+  }
+
+  .reviews__author-name {
+    margin-top: 38px;
+
+    font-size: @body-font-size + 2px;
+  }
+
+  .reviews__author-email {
+    margin-top: 3px;
+  }
+
+  .reviews__toggles {
+    top: 61%;
+    left: 77.3%;
+  }
+
+  .reviews__button {
+    left: 80.4%;
   }
 }
