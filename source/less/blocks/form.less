@@ -55,7 +55,7 @@
 .form__input-wrapper {
   position: relative;
 }
-// не получается подправить текст
+
 .form__textarea {
   width: 240px;
   height: 120px;
@@ -63,6 +63,9 @@
   margin-left: -3px;
   padding-top: 15px;
   padding-left: 14px;
+
+  font-size: @body-font-size + 2px;
+  line-height: 18px;
 
   border: 2px solid #444444;
   resize: none;
@@ -108,22 +111,19 @@
 
   .form__wrapper {
     display: flex;
-    flex-wrap: wrap;
-    margin-top: 70px;
+    // flex-wrap: wrap;
+    // display: -webkit-box;
     padding-right: 50px;
     padding-left: 50px;
 
     &--tablet {
-      // margin-top: 20px;
-      // padding-top: 15px;
-      // padding-left: 0;
-
       background-color: @footer-background-color;
     }
-  }
 
-  .form__border {
-    border-top: none;
+    &--column {
+    display: flex;
+    flex-wrap: wrap;
+    }
   }
 
   .form__title {
@@ -137,7 +137,35 @@
 
     &--color,
     &--data-person {
-      margin-top: -8px;
+      // margin-top: -8px;
+    }
+  }
+
+  .form__textarea {
+    width: 480px;
+
+    font-size: @body-font-size + 4px;
+  }
+
+  .form__note {
+    margin-top: 60px;
+    margin-left: 136px;
+
+    font-size: @body-font-size + 2px;
+    line-height: 30px;
+
+    &--tablet {
+      order: 2;
+    }
+  }
+
+  .form__button {
+    width: 230px;
+    margin-top: 45px;
+    margin-bottom: 52px;
+
+    &--tablet {
+      order: 1;
     }
   }
 }
