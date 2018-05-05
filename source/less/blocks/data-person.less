@@ -130,3 +130,36 @@
     background-color: @footer-background-color;
   }
 }
+
+@media (min-width: @desktop-width) {
+  .data-person__list {
+    width: 700px;
+  }
+
+  .data-person__input {
+    width: 556px;
+
+    &--firstname {
+      width: 608px;
+    }
+
+    &--phone {
+      left: 90.3%;
+
+      width: 25px;
+      height: 24px;
+    }
+
+    &--email {
+      left: 89%;
+
+      width: 42px;
+      height: 31px;
+    }
+  }
+
+  .data-person__input-phone,
+  .data-person__input-email {
+    width: 685px;
+  }
+}
