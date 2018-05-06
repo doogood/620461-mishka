@@ -35,14 +35,24 @@
     height: 90px;
     padding-top: 0;
     padding-bottom: 0;
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: 100%;
+
+      width: 768px;
+      height: 1px;
+
+      background-color: #e7e7e7;
+      background-repeat: no-repeat;
+    }
   }
 
   .page-header__logo {
     display: block;
     width: 372px;
     height: 90px;
-
-    border: 1px solid #ececec;
   }
 
   .page-header__logo-image {
@@ -61,6 +71,25 @@
 }
 
 @media (min-width: @desktop-width) {
+  .page-header {
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0%;
+      right: 57.3%;
+
+      width: 1px;
+      height: 90px;
+
+      background-color: #e7e7e7;
+      background-repeat: no-repeat;
+    }
+
+    &:after {
+      width: 1250px;
+    }
+  }
+
   .page-header__logo-tablet {
     display: none;
   }
