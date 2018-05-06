@@ -6,14 +6,21 @@
 }
 
 .filter-color__option {
+  margin-left: 60px;
+  padding-bottom: 43px;
+
   .font(@font-regular; @font-bold; bold);
   font-size: @body-font-size + 2px;
   line-height: 18px;
+
+  &--last {
+    padding-bottom: 13px;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .filter-color {
-    padding-top: 68px;
+    padding-top: 66px;
 
     background-color: @footer-background-color;
   }
@@ -27,35 +34,14 @@
 
   .filter-color__option {
     flex-wrap: wrap;
-    min-width: 185px;
+    flex-basis: 185px;
     margin: 0;
-    margin-bottom: 57px;
+    padding-bottom: 57px;
     padding-left: 76px;
     padding-right: 0;
 
     font-size: @body-font-size + 4px;
   }
 }
-
-@media (min-width: @desktop-width) {
-  // .filter-color {
-  //   padding-top: 68px;
-  // }
-
-  // .filter-color__list {
-  //   margin-top: 0;
-  //   margin-bottom: 0;
-  // }
-
-  .filter-color__option {
-    min-width: 185px;
-    margin: 0;
-    margin-bottom: 57px;
-    margin-left: 0;
-    margin-right: 0;
-    padding-left: 76px;
-    padding-right: 0;
-
-    font-size: @body-font-size + 4px;
-  }
-}
+// @media (min-width: @desktop-width) {
+// }

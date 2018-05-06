@@ -1,6 +1,6 @@
 .data-person__list {
   margin-left: -3px;
-  margin-bottom: 23px;
+  margin-bottom: 18px;
   padding-left: 0;
   padding-right: 0;
 
@@ -8,7 +8,7 @@
 }
 
 .data-person__option {
-  margin-top: 24px;
+  margin-top: 23px;
 
   .font(@font-regular; @font-bold; bold);
   font-size: @body-font-size + 2px;
@@ -55,14 +55,18 @@
 .data-person__input-phone,
 .data-person__input-email {
   margin-left: -3px;
-  margin-top: 17px;
-  margin-bottom: 23px;
+  margin-top: 20px;
+  margin-bottom: 33px;
+}
+
+.data-person__input-email {
+  margin-bottom: 18px;
 }
 
 @media (min-width: @tablet-width) {
   .data-person {
-    padding-top: 68px;
-    padding-bottom: 18px;
+    padding-top: 67px;
+    padding-bottom: 20px;
   }
 
   .data-person__list {
@@ -76,7 +80,7 @@
 
   .data-person__option {
     margin-top: -3px;
-    margin-bottom: 52px;
+    margin-bottom: 51px;
 
     font-size: @body-font-size + 4px;
 
@@ -161,5 +165,6 @@
   .data-person__input-phone,
   .data-person__input-email {
     width: 685px;
+    margin-left: -3px;
   }
 }

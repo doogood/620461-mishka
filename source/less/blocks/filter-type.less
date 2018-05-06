@@ -1,3 +1,8 @@
+.filter-type {
+  padding: 0;
+  padding-bottom: 15px;
+}
+
 .filter-type__list {
   margin-top: 0;
   margin-bottom: 0;
@@ -8,6 +13,9 @@
 }
 
 .filter-type__option {
+  margin-left: 60px;
+  padding-bottom: 24px;
+
   .font(@font-regular; @font-bold; bold);
   font-size: @body-font-size + 2px;
   line-height: 18px;
@@ -16,6 +24,7 @@
 @media (min-width: @tablet-width) {
   .filter-type {
     margin-top: 70px;
+    padding-bottom: 12px;
   }
 
   .filter-type__option {
@@ -23,9 +32,5 @@
     padding-bottom: 57px;
 
     font-size: @body-font-size + 4px;
-  }
-
-  .filter-color {
-    background-color: @footer-background-color;
   }
 }
