@@ -5,7 +5,7 @@
   padding-bottom: 30px;
 
   &--magnifier {
-    ::before {
+    &::before {
       content: url("../img/icon-search.svg");
       position: absolute;
       left: -10%;
@@ -24,7 +24,7 @@
   }
 
   &--basket {
-    ::before {
+    &::before {
       content: url("../img/icon-cart.svg");
       position: absolute;
       left: -10%;
@@ -106,7 +106,7 @@
     }
 
     &--magnifier {
-      &:after {
+      &::after {
         content: "";
         position: absolute;
         top: 0%;
@@ -117,17 +117,17 @@
         background-color: #e7e7e7;
         background-repeat: no-repeat;
 
-        transform: translateX(-35px)
+        transform: translateX(-35px);
       }
     }
 
     &--basket {
-      ::before {
+      &::before {
         left: -30%;
         top: 80%;
       }
 
-      &:after {
+      &::after {
         content: "";
         position: absolute;
         top: -9%;
@@ -185,13 +185,13 @@
     }
 
     &--magnifier {
-      &:after {
-        transform: translateX(118px)
+      &::after {
+        transform: translateX(118px);
       }
     }
 
     &--basket {
-      &:after {
+      &::after {
         top: 0%;
         right: 147%;
       }

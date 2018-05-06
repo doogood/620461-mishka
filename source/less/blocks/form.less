@@ -26,24 +26,6 @@
 
   color: @mint-text-color;
 
-  &--wrapper {
-    display: flex;
-    margin-bottom: 35px;
-  }
-
-  &--wrapper-data-person {
-    margin-bottom: 28px;
-  }
-
-  &--wrapper-phone,
-  &--wrapper-email {
-    margin-bottom: 0;
-  }
-
-  &--wrapper-add {
-    margin-bottom: 5px;
-  }
-
   &--line {
     width: 200px;
     margin-left: -20px;
@@ -55,6 +37,24 @@
   &--line-short {
     width: 180px;
     margin-left: 0;
+  }
+}
+
+.form__title-wrapper {
+  display: flex;
+  margin-bottom: 35px;
+
+  &--data-person {
+    margin-bottom: 28px;
+  }
+
+  &--phone,
+  &--email {
+    margin-bottom: 0;
+  }
+
+  &--add {
+    margin-bottom: 5px;
   }
 }
 
@@ -128,7 +128,7 @@
     padding-left: 50px;
 
     &--tablet {
-      background-color: @footer-background-color;
+      background-color: @secondary-background-color;
     }
 
     &--color-tablet {
@@ -153,10 +153,6 @@
     margin-left: 0;
     margin-right: 90px;
 
-    &--wrapper hr {
-      display: none;
-    }
-
     &--data-person {
       margin-top: 5px;
     }
@@ -164,6 +160,10 @@
     &--add {
       margin-top: 38px;
     }
+  }
+
+  .form__title-wrapper hr {
+    display: none;
   }
 
   .form__textarea {

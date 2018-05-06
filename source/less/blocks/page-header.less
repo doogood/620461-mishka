@@ -36,7 +36,7 @@
     padding-top: 0;
     padding-bottom: 0;
 
-    &:after {
+    &::after {
       content: "";
       position: absolute;
       top: 100%;
@@ -72,7 +72,7 @@
 
 @media (min-width: @desktop-width) {
   .page-header {
-    &:before {
+    &::before {
       content: "";
       position: absolute;
       top: 0%;
@@ -85,7 +85,7 @@
       background-repeat: no-repeat;
     }
 
-    &:after {
+    &::after {
       width: 1250px;
     }
   }
