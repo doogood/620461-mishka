@@ -106,6 +106,10 @@
     }
 
     &--magnifier {
+      &::before {
+        top: 35%;
+      }
+
       &::after {
         content: "";
         position: absolute;
@@ -185,6 +189,12 @@
     }
 
     &--magnifier {
+      &::before {
+        top: 30%;
+
+        transform: translateX(150px);
+      }
+
       &::after {
         transform: translateX(118px);
       }
