@@ -20,19 +20,23 @@
 }
 
 .intro__list {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
 
   list-style: none;
-  vertical-align: middle;
 }
 
 .intro__links {
-  position: absolute;
-
-  width: 150px;
+  display: block;
+  width: 130px;
   margin-left: 30px;
+  margin-right: 30px;
+  padding-top: 26px;
+  padding-bottom: 29px;
 
   .font(@font-regular; @font-bold; bold);
   font-size: @body-font-size + 4px;
@@ -44,17 +48,16 @@
 .intro__link {
   position: relative;
 
-  padding-top: 25px;
-  padding-bottom: 78px;
+  width: 320px;
 
   &--lamp {
     background-color: @intro-link-background-color-lamp;
 
-    ::before {
+    &::before {
       content: url("../img/icon-interior.svg");
       position: absolute;
-      top: 66%;
-      right: -82%;
+      top: 23%;
+      left: 76%;
 
       display: table;
       width: 60px;
@@ -63,19 +66,17 @@
       background-repeat: no-repeat;
       background-size: 40px 62px;
       opacity: 0.2;
-
-      transform: translateY(-50%);
     }
   }
 
   &--lego {
     background-color: @intro-link-background-color-lego;
 
-    ::before {
+    &::before {
       content: url("../img/icon-toy.svg");
       position: absolute;
-      top: 60%;
-      right: -75%;
+      top: 22%;
+      left: 73%;
 
       display: table;
       width: 60px;
@@ -84,18 +85,11 @@
       background-repeat: no-repeat;
       background-size: 60px 60px;
       opacity: 0.2;
-
-      transform: translateY(-50%);
     }
   }
 }
 
 @media (min-width: @tablet-width) {
-  .intro {
-    display: flex;
-    flex-direction: column;
-  }
-
   .intro__image {
     width: 768px;
     height: 746px;
@@ -124,7 +118,8 @@
   }
 
   .intro__list {
-    display: flex;
+    flex-direction: row;
+    width: 968px;
     padding-left: 50px;
     padding-right: 50px;
   }
@@ -139,14 +134,6 @@
   .intro__link {
     flex-basis: 334px;
     margin-top: -118px;
-    padding-top: 28px;
-
-    &--lamp {
-      ::before {
-        right: -85%;
-        top: 62%;
-      }
-    }
   }
 }
 
@@ -174,6 +161,7 @@
   }
 
   .intro__list {
+    width: 1150px;
     padding-left: 100px;
     padding-right: 100px;
   }
@@ -183,14 +171,14 @@
     margin-top: -122px;
 
     &--lamp {
-      ::before {
-        right: -209%;
+      &::before {
+        left: 85%;
       }
     }
 
     &--lego {
-      ::before {
-        right: -196%;
+      &::before {
+        left: 82%;
       }
     }
   }
