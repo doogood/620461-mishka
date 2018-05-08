@@ -1,12 +1,28 @@
 .big-title {
-  padding-top: 70px;
-  padding-bottom: 75px;
   margin-top: 0;
   margin-bottom: 0;
+  padding-top: 70px;
+  padding-bottom: 75px;
 
   font-size: @body-font-size + 12px;
   line-height: 30px;
   text-align: center;
 
-  background-color: @footer-background-color;
+  background-color: @secondary-background-color;
+}
+
+@media (min-width: @tablet-width) {
+  .big-title {
+    padding-top: 95px;
+
+    font-size: @body-font-size + 28px;
+    line-height: 50px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .big-title {
+    font-size: @body-font-size + 38px;
+    line-height: 57px;
+  }
 }

@@ -1,11 +1,36 @@
+.filter-type {
+  padding: 0;
+  padding-bottom: 15px;
+}
+
 .filter-type__list {
-  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
   padding-left: 0;
   padding-right: 0;
+
+  list-style: none;
 }
 
 .filter-type__option {
+  margin-left: 60px;
+  padding-bottom: 24px;
+
   .font(@font-regular; @font-bold; bold);
-  font-size: @body-font-size;
+  font-size: @body-font-size + 2px;
   line-height: 18px;
+}
+
+@media (min-width: @tablet-width) {
+  .filter-type {
+    margin-top: 70px;
+    padding-bottom: 12px;
+  }
+
+  .filter-type__option {
+    margin-left: 76px;
+    padding-bottom: 57px;
+
+    font-size: @body-font-size + 4px;
+  }
 }

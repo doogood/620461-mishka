@@ -1,68 +1,222 @@
 .site-list__item {
   position: relative;
+
   padding-top: 30px;
   padding-bottom: 30px;
 
-  &--link {
-    .font(@font-regular; @font-bold; bold);
-    font-size: @body-font-size + 2px;
-    line-height: 24px;
-    vertical-align: middle;
-
-    color: @primary-text-color;
-  }
-
   &--magnifier {
-    ::before {
+    &::before {
+      content: url("../img/icon-search.svg");
       position: absolute;
+      left: -10%;
+      top: 50%;
 
       display: table;
       width: 20px;
       height: 20px;
-      left: -10%;
-      top: 50%;
-
-      transform: translateY(-40%);
-
-      content: url("../img/icon-search.svg");
 
       background-repeat: no-repeat;
       background-size: 20px 19px;
-
       opacity: 0.2;
+
+      transform: translateY(-40%);
     }
   }
 
   &--basket {
-    ::before {
+    &::before {
+      content: url("../img/icon-cart.svg");
       position: absolute;
+      left: -10%;
+      top: 50%;
 
       display: table;
       width: 20px;
       height: 20px;
-      left: -10%;
-      top: 50%;
-
-      transform: translateY(-40%);
-
-      content: url("../img/icon-cart.svg");
 
       background-repeat: no-repeat;
       background-size: 20px 19px;
-
       opacity: 0.2;
+
+      transform: translateY(-40%);
     }
   }
+
+  &--delivery-hidden {
+    display: none;
+  }
+
+  &--new-hidden {
+    display: none;
+  }
+
+  &--sale-hidden {
+    display: none;
+  }
+}
+
+.site-list__link {
+  .font(@font-regular; @font-bold; bold);
+  font-size: @body-font-size + 2px;
+  line-height: 24px;
+  vertical-align: middle;
+  color: @primary-text-color;
 }
 
 @media (min-width: @tablet-width) {
   .site-list {
-    width: 550px; // или 500?
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 668px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .site-list__wrapper-left {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    padding-top: 80px;
+    padding-bottom: 0;
+  }
+
+  .site-list__wrapper-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 257px;
+    padding-top: 5px;
+  }
+
+  .site-list__item {
+    padding-bottom: 0;
+
+    &--delivery-hidden {
+      display: flex;
+      padding-top: 52px;
+    }
+
+    &--new-hidden {
+      display: none;
+    }
+
+    &--sale-hidden {
+      display: none;
+    }
+
+    &--magnifier {
+      &::before {
+        top: 35%;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0%;
+
+        width: 1px;
+        height: 90px;
+
+        background-color: #e7e7e7;
+        background-repeat: no-repeat;
+
+        transform: translateX(-35px);
+      }
+    }
+
+    &--basket {
+      &::before {
+        left: -30%;
+        top: 80%;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: -9%;
+        right: 145%;
+
+        width: 1px;
+        height: 90px;
+
+        background-color: #e7e7e7;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+
+  .site-list__link {
+    &--search-hidden {
+      position: absolute;
+      top: 10%;
+
+      color: transparent;
+
+      border: none;
+    }
+
+    &--small {
+      font-size: @body-font-size;
+    }
   }
 }
 
 @media (min-width: @desktop-width) {
   .site-list {
+    display: flex;
     width: 1050px;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
+  .site-list__wrapper-left {
+    width: 370px;
+    padding-top: 0;
+  }
+
+  .site-list__wrapper-right {
+    padding-top: 0;
+  }
+
+  .site-list__item {
+    padding-bottom: 0;
+
+    &--new-hidden,
+    &--sale-hidden {
+      display: block;
+      padding-top: 50px;
+    }
+
+    &--magnifier {
+      &::before {
+        top: 30%;
+
+        transform: translateX(150px);
+      }
+
+      &::after {
+        transform: translateX(118px);
+      }
+    }
+
+    &--basket {
+      &::after {
+        top: 0%;
+        right: 147%;
+      }
+    }
+  }
+
+  .site-list__link {
+    &--search-hidden {
+      top: 9%;
+
+      transform: translateX(285%);
+    }
+
+    &--big {
+      font-size: @body-font-size + 2px;
+    }
   }
 }

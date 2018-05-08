@@ -12,7 +12,11 @@ body {
   font-size: @body-font-size;
   line-height: 21px;
 
-  background-color: @body-background;
+  // временно
+  background-color: #a690b3;
+  // background-color: @body-background;
+
+  margin: 0 auto;
 }
 
 a {
@@ -36,7 +40,7 @@ img {
   justify-content: center;
   align-items: center;
   width: 257px;
-  height: 50px;
+  height: 48px;
 
   .font(@font-regular; @font-bold; bold);
   font-size: @body-font-size + 3px;
@@ -44,27 +48,37 @@ img {
   text-align: center;
   vertical-align: middle;
   text-transform: uppercase;
+  color: @secondary-text-color;
 
   border: 2px solid @button-border-color;
-  color: @secondary-text-color;
+
   cursor: pointer;
 }
 
-// .visually-hidden {
-//   position: absolute;
-//   overflow: hidden;
-//   clip: rect(0 0 0 0);
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
 
-//   width: 1px;
-//   height: 1px;
-//   margin: -1px;
-//   padding: 0;
-//   border: 0;
-// }
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
 
 @media (min-width: @tablet-width) {
   .container {
-    width: @tablet-width;
-    margin: 0 auto;
+    width: 768px;
+  }
+
+  .button {
+    font-size: @body-font-size + 2px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .container {
+    width: 1250px;
   }
 }

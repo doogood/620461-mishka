@@ -12,107 +12,310 @@
 
 .advantages__list {
   padding-left: 0;
+
   list-style: none;
+}
+
+.advantages__text {
+  .font(@font-regular; @font-bold; bold);
+  font-size: @body-font-size + 2px;
+  line-height: 20px;
 }
 
 .advantages__item {
   position: relative;
-  padding-top: 60px;
-  padding-bottom: 60px;
+
+  padding-top: 49px;
+
   background-repeat: no-repeat;
 
-  &--text {
-    position: absolute;
-
-    .font(@font-regular; @font-bold; bold);
-    font-size: @body-font-size + 2px;
-    line-height: 20px;
-  }
-
   &--eco {
-    ::before {
+    width: 180px;
+
+    &::before {
       content: url("../img/icon-feature-flower.svg");
       position: absolute;
+      top: 13%;
+      left: 5%;
 
       display: table;
       width: 35px;
       height: 37px;
-      left: 4%;
-      top: -120%;
 
       background-size: 32px 37px;
     }
   }
 
   &--price {
-    ::before {
+    width: 200px;
+
+    &::before {
       content: url("../img/icon-feature-money.svg");
       position: absolute;
+      top: 13%;
 
       display: table;
       width: 50px;
       height: 20px;
-      top: -120%;
 
       background-size: 47px 27px;
     }
   }
 
   &--likes {
-    ::before {
+    width: 200px;
+
+    &::before {
       content: url("../img/icon-feature-heart.svg");
       position: absolute;
+      top: 16%;
+      left: 4%;
 
       display: table;
       width: 35px;
       height: 30px;
-      left: 4%;
-      top: -120%;
 
       background-size: 34px 27px;
     }
   }
 
   &--with-love {
-    ::before {
+    width: 210px;
+
+    &::before {
       content: url("../img/icon-feature-ball.svg");
       position: absolute;
+      top: 15%;
+      left: 2%;
 
       display: table;
       width: 35px;
       height: 35px;
-      top: -120%;
 
       background-size: 35px 34px;
     }
   }
 
   &--domestic-manufacturer {
-    ::before {
+    padding-left: 2px;
+
+    &::before {
       content: url("../img/icon-feature-rocket.svg");
       position: absolute;
+      top: 16%;
+      left: -2%;
 
       display: table;
       width: 55px;
       height: 25px;
-      left: -3%;
-      top: -120%;
 
       background-size: 55px 23px;
     }
   }
 
   &--gift-pack {
-    ::before {
+    width: 200px;
+
+    &::before {
       content: url("../img/icon-feature-gift.svg");
       position: absolute;
+      top: 13%;
+      left: 2%;
 
       display: table;
       width: 35px;
       height: 35px;
-      top: -120%;
 
       background-size: 33px 32px;
+    }
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .advantages {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .advantages__title {
+    margin-top: 0;
+    margin-bottom: 34px;
+    margin-left: -5px;
+
+    font-size: @body-font-size + 28px;
+    line-height: 50px;
+  }
+
+  .advantages__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .advantages__text {
+    font-size: @body-font-size + 5px;
+    line-height: 22px;
+  }
+
+  .advantages__item {
+    width: 300px;
+    padding-top: 48px;
+    padding-right: 30px;
+
+    &--eco {
+      order: 1;
+      width: 210px;
+
+      &::before {
+        top: 11%;
+        left: 4%;
+      }
+    }
+
+    &--price {
+      order: 3;
+      width: 240px;
+      padding-top: 70px;
+
+      &::before {
+        top: 25%;
+      }
+    }
+
+    &--likes {
+      order: 5;
+      width: 220px;
+      padding-top: 74px;
+
+      &::before {
+        top: 28%;
+        left: 3%;
+      }
+    }
+
+    &--with-love {
+      order: 2;
+      width: 250px;
+      margin-right: 54px;
+
+      &::before {
+        top: 13%;
+      }
+    }
+
+    &--domestic-manufacturer {
+      order: 4;
+      margin-right: 3px;
+      padding-top: 70px;
+
+      &::before {
+        top: 27%;
+        left: -2%;
+      }
+    }
+
+    &--gift-pack {
+      order: 6;
+      width: 240px;
+      margin-right: 64px;
+      padding-top: 74px;
+
+      &::before {
+        top: 25%;
+        left: 1%;
+      }
+    }
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .advantages {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
+  .advantages__title {
+    margin-left: 170px;
+    margin-bottom: 35px;
+
+    font-size: @body-font-size + 38px;
+    line-height: 57px;
+  }
+
+  .advantages__list {
+    width: 700px;
+    margin-left: 174px;
+  }
+
+  .advantages__item {
+    width: 300px;
+
+    padding-right: 45px;
+
+    // почему-то если не продублировать эти свойста, всё ломается
+    &--eco {
+      order: 1;
+      width: 210px;
+
+      &::before {
+        top: 11%;
+        left: 4%;
+      }
+    }
+
+    &--price {
+      order: 3;
+      width: 240px;
+      padding-top: 70px;
+
+      &::before {
+        top: 25%;
+      }
+    }
+
+    &--likes {
+      order: 5;
+      width: 220px;
+      padding-top: 74px;
+
+      &::before {
+        top: 28%;
+        left: 3%;
+      }
+    }
+
+    &--with-love {
+      order: 2;
+      width: 250px;
+      margin-right: 54px;
+
+      &::before {
+        top: 13%;
+      }
+    }
+
+    &--domestic-manufacturer {
+      order: 4;
+      margin-right: 3px;
+      padding-top: 70px;
+
+      &::before {
+        top: 27%;
+        left: -2%;
+      }
+    }
+
+    &--gift-pack {
+      order: 6;
+      width: 240px;
+      margin-right: 64px;
+      padding-top: 74px;
+
+      &::before {
+        top: 25%;
+        left: 1%;
+      }
     }
   }
 }

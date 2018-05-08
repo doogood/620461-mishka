@@ -1,4 +1,6 @@
 .page-footer__map {
+  position: relative;
+
   height: 457px;
 
   background-image: url("../img/map-mobile@1x.jpg");
@@ -7,9 +9,101 @@
   background-size: 320px 457px;
 }
 
+.page-footer__map-icon {
+  position: absolute;
+  top: 32%;
+  left: 43%;
+
+  background-size: 67px 100px;
+}
+
+.page-footer__logo {
+  display: none;
+}
+
 .page-footer__button {
   margin-left: 30px;
   margin-right: 30px;
   margin-top: 40px;
   margin-bottom: 40px;
+}
+
+.page-footer__wrapper {
+  background-color: @secondary-background-color;
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer {
+    position: relative;
+  }
+
+  .page-footer__map {
+    margin-top: 13px;
+    margin-bottom: 55px;
+
+    background-image: url("../img/map-tablet@1x.jpg");
+    background-size: 768px 457px;
+  }
+
+  .page-footer__map-icon {
+    top: 30%;
+    left: 47.3%;
+  }
+
+  .page-footer__wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+
+    background-color: @secondary-background-color;
+  }
+
+  .page-footer__logo {
+    display: flex;
+    width: 220px;
+    padding-right: 113px;
+  }
+
+  .page-footer__button {
+    width: 225px;
+    margin: 0 auto;
+    margin-bottom: 57px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer__map {
+    margin-top: -364px;
+    margin-left: 624px;
+
+    width: 525px;
+    height: 457px;
+
+    background-image: url("../img/map-desktop@1x.jpg");
+    background-size: 525px 457px;
+  }
+
+  .page-footer__map-icon {
+    top: 32.2%;
+    left: 45.4%;
+  }
+
+  .page-footer__wrapper {
+    justify-content: space-between;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  .page-footer__logo {
+    width: 100px;
+    padding-right: 115px;
+  }
+
+  .page-footer__button {
+    margin-top: -110px;
+    margin-bottom: 105px;
+    margin-left: 275px;
+  }
 }

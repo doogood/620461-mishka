@@ -1,29 +1,170 @@
 .data-person__list {
-  list-style: none;
+  margin-left: -3px;
+  margin-bottom: 18px;
   padding-left: 0;
   padding-right: 0;
+
+  list-style: none;
 }
 
 .data-person__option {
+  margin-top: 23px;
+
   .font(@font-regular; @font-bold; bold);
-  font-size: @body-font-size;
+  font-size: @body-font-size + 2px;
   line-height: 18px;
 }
 
 .data-person__input {
-  position: relative;
+  width: 260px;
+  margin-top: 15px;
+  margin-bottom: -2px;
+  padding-bottom: 17px;
+
+  font-size: @body-font-size + 2px;
+  line-height: 18px;
+
+  border: none;
+  border-bottom: 2px solid @primary-text-color;
 
   &--phone {
-    top: 5px;
-    left: 40px;
+    position: absolute;
+    top: 0%;
+    left: 88%;
 
+    width: 25px;
+    height: 24px;
+
+    border: none;
     opacity: 0.2;
   }
 
   &--email {
-    top: 12px;
-    left: 37px;
+    position: absolute;
+    top: 0%;
+    left: 85%;
 
+    width: 42px;
+    height: 31px;
+
+    border: none;
     opacity: 0.2;
+  }
+}
+
+.data-person__input-phone,
+.data-person__input-email {
+  margin-left: -3px;
+  margin-top: 20px;
+  margin-bottom: 33px;
+}
+
+.data-person__input-email {
+  margin-bottom: 18px;
+}
+
+@media (min-width: @tablet-width) {
+  .data-person {
+    padding-top: 67px;
+    padding-bottom: 20px;
+  }
+
+  .data-person__list {
+    width: 497px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .data-person__option {
+    margin-top: -3px;
+    margin-bottom: 51px;
+
+    font-size: @body-font-size + 4px;
+
+    &--patronymic {
+      margin-bottom: 42px;
+    }
+  }
+
+  .data-person__input {
+    width: 356px;
+    margin-top: 0;
+    margin-bottom: -10px;
+    margin-left: 18px;
+    padding-top: 0;
+    padding-bottom: 10px;
+    padding-left: 17px;
+
+    font-size: @body-font-size + 4px;
+
+    &--firstname {
+      width: 408px;
+    }
+
+    &--phone {
+      top: 0%;
+      left: 82.7%;
+
+      width: 25px;
+      height: 24px;
+    }
+
+    &--email {
+      top: 0%;
+      left: 81.4%;
+
+      width: 42px;
+      height: 31px;
+    }
+  }
+
+  .data-person__input-phone,
+  .data-person__input-email {
+    width: 485px;
+    margin-top: 0;
+    margin-bottom: 35px;
+    margin-left: -5px;
+    padding-top: 0;
+    padding-bottom: 13px;
+    padding-left: 14px;
+
+    background-color: @secondary-background-color;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .data-person__list {
+    width: 700px;
+  }
+
+  .data-person__input {
+    width: 556px;
+
+    &--firstname {
+      width: 608px;
+    }
+
+    &--phone {
+      left: 90.3%;
+
+      width: 25px;
+      height: 24px;
+    }
+
+    &--email {
+      left: 89%;
+
+      width: 42px;
+      height: 31px;
+    }
+  }
+
+  .data-person__input-phone,
+  .data-person__input-email {
+    width: 685px;
+    margin-left: -3px;
   }
 }
