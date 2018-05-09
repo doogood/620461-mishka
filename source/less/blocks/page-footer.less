@@ -7,6 +7,11 @@
   background-repeat: no-repeat;
   background-color: #ffffff;
   background-size: 320px 457px;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/map-mobile@2x.jpg");
+    background-size: 320px 457px;
+  }
 }
 
 .page-footer__map-icon {
@@ -43,6 +48,11 @@
 
     background-image: url("../img/map-tablet@1x.jpg");
     background-size: 768px 457px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/map-tablet@2x.jpg");
+      background-size: 768px 457px;
+    }
   }
 
   .page-footer__map-icon {
@@ -83,6 +93,11 @@
 
     background-image: url("../img/map-desktop@1x.jpg");
     background-size: 525px 457px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/map-destop@2x.jpg");
+      background-size: 525px 457px;
+    }
   }
 
   .page-footer__map-icon {

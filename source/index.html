@@ -115,8 +115,11 @@ content="width=device-width,initial-scale=1">
               <td class="top-product__value">15 см</td>
             </tr>
           </table>
-          <img class="top-product__image top-product__image--mobile" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="На руках держат три вязаные корзинки">
-          <img class="top-product__image top-product__image--desktop" src="img/triple-set-desktop.jpg" width="525" height="636" alt="На руках держат три вязаные корзинки">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+            <img class="top-product__image" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="На руках держат три вязаные корзинки">
+          </picture>
           <p class="top-product__price">
             <strong>Цена: 990 руб.</strong>
           </p>
