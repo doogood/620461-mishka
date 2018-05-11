@@ -5,40 +5,56 @@
   padding-bottom: 30px;
 
   &--magnifier {
-    &::before {
-      content: url("../img/icon-search.svg");
-      position: absolute;
-      left: -10%;
-      top: 50%;
+    content: "";
+    position: absolute;
+    left: -10%;
+    top: 50%;
 
-      display: table;
-      width: 20px;
-      height: 20px;
+    display: table;
+    width: 20px;
+    height: 20px;
 
-      background-repeat: no-repeat;
-      background-size: 20px 19px;
-      opacity: 0.2;
+    background-repeat: no-repeat;
+    background-size: 20px 19px;
+    fill: #231f20;
+    opacity: 0.2;
 
-      transform: translateY(-40%);
+    transform: translateY(-40%);
+
+    &:hover,
+    &:focus {
+      fill: #63d1bb;
+    }
+
+    &:active {
+      fill: #d0f1ea;
     }
   }
 
   &--basket {
-    &::before {
-      content: url("../img/icon-cart.svg");
-      position: absolute;
-      left: -10%;
-      top: 50%;
+    content: "";
+    position: absolute;
+    left: -10%;
+    top: 50%;
 
-      display: table;
-      width: 20px;
-      height: 20px;
+    display: table;
+    width: 20px;
+    height: 20px;
 
-      background-repeat: no-repeat;
-      background-size: 20px 19px;
-      opacity: 0.2;
+    background-repeat: no-repeat;
+    background-size: 20px 19px;
+    fill: #231f20;
+    opacity: 0.2;
 
-      transform: translateY(-40%);
+    transform: translateY(-40%);
+
+    &:hover,
+    &:focus {
+      fill: #63d1bb;
+    }
+
+    &:active {
+      fill: #d0f1ea;
     }
   }
 
