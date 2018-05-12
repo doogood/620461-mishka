@@ -3,14 +3,14 @@
 
   display: flex;
   padding-top: 22px;
-  padding-bottom: 22px;
+  padding-bottom: 0;
 }
 
 .page-header__logo {
   height: 80px;
 }
 
-.page-header__logo-image {
+.page-header__logo-mobile {
   position: absolute;
   top: 5.3%;
   left: 36%;
@@ -18,6 +18,17 @@
   width: 86px;
   height: 35px;
   padding-bottom: 22px;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &--active {
+    &:active {
+      opacity: 0.3;
+    }
+  }
 }
 
 .page-header__logo-tablet,
@@ -32,7 +43,7 @@
     display: flex;
     flex-direction: row;
     width: 668px;
-    height: 90px;
+    height: 88px;
     padding-top: 0;
     padding-bottom: 0;
 
@@ -52,21 +63,64 @@
   .page-header__logo {
     display: block;
     width: 372px;
-    height: 90px;
+    height: 88px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 60.8%;
+
+      display: block;
+      width: 1px;
+      height: 88px;
+      margin: 0;
+      padding: 0;
+
+      background-color: #e7e7e7;
+      background-repeat: no-repeat;
+
+      transform: translateX(-35px);
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 73%;
+
+      display: block;
+      width: 1px;
+      height: 88px;
+      margin: 0;
+      padding: 0;
+
+      background-color: #e7e7e7;
+      background-repeat: no-repeat;
+
+      transform: translateX(-35px);
+    }
   }
 
-  .page-header__logo-image {
+  .page-header__logo-mobile {
     display: none;
   }
 
   .page-header__logo-tablet {
     position: absolute;
-    top: 30%;
+    top: 25%;
     left: 7%;
 
     display: block;
     width: 113px;
     height: 46px;
+
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }
 
@@ -79,7 +133,7 @@
       right: 57.3%;
 
       width: 1px;
-      height: 90px;
+      height: 88px;
 
       background-color: #e7e7e7;
       background-repeat: no-repeat;
@@ -90,6 +144,16 @@
     }
   }
 
+  .page-header__logo {
+    &::before {
+      left: 125%;
+    }
+
+    &::after {
+      left: 137.5%;
+    }
+  }
+
   .page-header__logo-tablet {
     display: none;
   }
@@ -97,8 +161,19 @@
   .page-header__logo-desktop {
     position: absolute;
     top: 10%;
-    left: 82%;
+    left: 82.5%;
 
     display: block;
+    width: 149px;
+    height: 72px;
+
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }

@@ -4,22 +4,29 @@
 }
 
 .main-nav__toggle {
-  position: relative;
-  left: 260px;
-  top: 5px;
-
-  background-image: url("../img/logo-close.svg");
-  background-repeat: no-repeat;
   background-color: #ffffff;
-  background-size: 21px 20px;
   border: none;
 
   cursor: pointer;
+
+  &--close {
+    position: absolute;
+    top: 6%;
+    left: 80%;
+
+    background-image: url("../img/logo-close.svg");
+    background-repeat: no-repeat;
+    background-color: #ffffff;
+    background-size: 21px 20px;
+  }
+
+  &--open {
+    display: none;
+  }
 }
 
 .main-nav__list {
   margin: 0;
-  margin-left: 30px;
   padding: 0;
 
   list-style: none;

@@ -18,6 +18,51 @@
   }
 }
 
+.filter-color__option label {
+  position: relative;
+  display: block;
+}
+
+.filter-color__input {
+  &--checkbox + label::before {
+    content: "";
+    position: absolute;
+    top: -60%;
+    left: -31%;
+
+    width: 40px;
+    height: 40px;
+
+    box-sizing: border-box;
+    border: 2px solid black;
+    background-color: white;
+  }
+
+  &--checkbox:hover + label::before {
+    border: 2px solid #62d1ba;
+    background-color: #ffffff;
+  }
+
+  &--checkbox:active + label::before {
+    border: 2px solid #c7c7c7;
+    background-color: #ffffff;
+  }
+
+  // FIXME: как уменьшить галку?
+  &--checkbox:checked + label::after {
+    content: url("../img/icon-tick.svg");
+    position: absolute;
+    top: -10%;
+    left: -29%;
+
+    width: 5px;
+    height: 5px;
+
+    background-color: #ffffff;
+    background-size: 5px 5px;
+  }
+}
+
 @media (min-width: @tablet-width) {
   .filter-color {
     padding-top: 66px;
@@ -42,6 +87,29 @@
 
     font-size: @body-font-size + 4px;
   }
+
+  .filter-color__input {
+    &--checkbox + label::before {
+      top: -95%;
+      left: -44%;
+
+      width: 54px;
+      height: 52px;
+    }
+
+    &--checkbox:checked + label::after {
+      left: -38%;
+    }
+
+    &--checkbox + label::before,
+    &--checkbox:hover + label::before,
+    &--checkbox:active + label::before,
+    &--checkbox:checked + label::after {
+      background-color: #f1f1f1;
+    }
+  }
 }
+
+
 // @media (min-width: @desktop-width) {
 // }
