@@ -31,6 +31,16 @@
   margin-right: 30px;
   margin-top: 40px;
   margin-bottom: 40px;
+
+  &:hover,
+  &:focus {
+    color: #ffffff;
+    background-color: #444444;
+  }
+
+  &:active {
+    color: #8d8d8d;
+  }
 }
 
 .page-footer__wrapper {
@@ -55,6 +65,11 @@
     }
   }
 
+  .page-footer__map-iframe {
+    width: 768px;
+    height: 457px;
+  }
+
   .page-footer__map-icon {
     top: 30%;
     left: 47.3%;
@@ -74,6 +89,19 @@
     display: flex;
     width: 220px;
     padding-right: 113px;
+
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      fill: #63d1bb;
+      opacity: 1;
+    }
+
+    &:active {
+      fill: #d0f1ea;
+      opacity: 1;
+    }
   }
 
   .page-footer__button {
@@ -95,9 +123,14 @@
     background-size: 525px 457px;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-      background-image: url("../img/map-destop@2x.jpg");
+      background-image: url("../img/map-desktop@2x.jpg");
       background-size: 525px 457px;
     }
+  }
+
+  .page-footer__map-iframe {
+    width: 525px;
+    height: 457px;
   }
 
   .page-footer__map-icon {

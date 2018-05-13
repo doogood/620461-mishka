@@ -13,22 +13,27 @@ content="width=device-width,initial-scale=1">
     <div class="container">
       <header class="page-header">
         <a class="page-header__logo" href="index.html">
-          <svg class="page-header__logo-mobile page-header__logo-mobile--active" width="86" height="35">
+          <svg class="page-header__logo-mobile page-header__logo-mobile--active" width="86" height="35" role="img">
+            <title>Переход на главную страницу</title>
             <use xlink:href="img/sprite.svg#header-logo-mobile"></use>
           </svg>
-          <svg class="page-header__logo-tablet page-header__logo-tablet--active" width="113" height="46">
+          <svg class="page-header__logo-tablet page-header__logo-tablet--active" width="113" height="46" role="img">
+            <title>Переход на главную страницу</title>
             <use xlink:href="img/sprite.svg#header-logo-tablet"></use>
           </svg>
-          <svg class="page-header__logo-desktop page-header__logo-desktop--active" width="149" height="72">
+          <svg class="page-header__logo-desktop page-header__logo-desktop--active" width="149" height="72" role="img">
+            <title>Переход на главную страницу</title>
             <use xlink:href="img/sprite.svg#header-logo-desktop"></use>
           </svg>
         </a>
         <nav class="main-nav">
           <button class="main-nav__toggle" type="button">
-            <svg class="main-nav__toggle--close" width="20" height="20">
+            <svg class="main-nav__toggle main-nav__toggle--close" width="20" height="20" role="img">
+              <title>Закрыть меню</title>
               <use xlink:href="img/sprite.svg#toggle-close"></use>
             </svg>
-            <svg class="main-nav__toggle--open" width="20" height="20">
+            <svg class="main-nav__toggle main-nav__toggle--open" width="20" height="20" role="img">
+              <title>Открыть меню</title>
               <use xlink:href="img/sprite.svg#toggle-open"></use>
             </svg>
           </button>
@@ -53,8 +58,10 @@ content="width=device-width,initial-scale=1">
                 </div>
               </div>
               <li class="site-list__item">
-                <a class="site-list__link site-list__link--search-hidden" href="#">Поиск по сайту
-                  <svg class="site-list__item--magnifier site-list__link--search-hidden" width="18" height="18">
+                <a class="site-list__link" href="#">
+                  <span class="site-list__link-hidden">Поиск по сайту</span>
+                  <svg class="site-list__icon-magnifier" width="18" height="18" role="img">
+                    <title>Найти на сайте</title>
                     <use xlink:href="img/sprite.svg#magnifier"></use>
                   </svg>
                 </a>
@@ -62,7 +69,8 @@ content="width=device-width,initial-scale=1">
               <div class="site-list__wrapper-right">
                 <li class="site-list__item">
                   <a class="site-list__link" href="#">Корзина: пока пуста
-                    <svg class="site-list__item--basket" width="18" height="18">
+                    <svg class="site-list__icon-basket" width="18" height="18" role="img">
+                      <title>Переход в корзину</title>
                       <use xlink:href="img/sprite.svg#cart"></use>
                     </svg>
                   </a>
@@ -87,7 +95,7 @@ content="width=device-width,initial-scale=1">
                 <div class="form__wrapper">
                   <div class="form__title-wrapper">
                     <legend class="form__title">Тип</legend>
-                    <hr class="form__title--line">
+                    <hr class="form__title-line">
                   </div>
                   <ul class="filter-type__list">
                     <li class="filter-type__option">
@@ -105,7 +113,7 @@ content="width=device-width,initial-scale=1">
                 <div class="form__wrapper form__wrapper--color-tablet">
                   <div class="form__title-wrapper">
                     <legend class="form__title">Цвет</legend>
-                    <hr class="form__title--line">
+                    <hr class="form__title-line">
                   </div>
                   <ul class="filter-color__list">
                     <li class="filter-color__option">
@@ -139,7 +147,7 @@ content="width=device-width,initial-scale=1">
                 <div class="form__wrapper">
                   <div class="form__title-wrapper form__title-wrapper--data-person">
                     <legend class="form__title">ФИО</legend>
-                    <hr class="form__title--line">
+                    <hr class="form__title-line">
                   </div>
                   <ul class="data-person__list">
                     <li class="data-person__option">
@@ -157,41 +165,32 @@ content="width=device-width,initial-scale=1">
                   </ul>
                 </div>
               </fieldset>
-              <div class="form__wrapper--tablet">
+              <div class="form__wrapper-tablet">
                 <fieldset class="form__border">
                   <div class="form__wrapper form__wrapper--column">
                     <div class="form__title-wrapper form__title-wrapper--phone">
                       <legend class="form__title  form__title--data-person">Тел</legend>
-                      <hr class="form__title--line">
+                      <hr class="form__title-line">
                     </div>
                     <div class="form__input-wrapper">
                       <label for="telephone"></label>
                       <input class="data-person__input data-person__input-phone" type="tel" name="phone" id="telephone" placeholder="+7 XXX XX XX*" required>
-                      <svg class="data-person__input data-person__input--phone" version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24.829px" height="24.333px" viewBox="0 0 24.829 24.333" enable-background="new 0 0 24.829 24.333" xml:space="preserve">
-                        <g>
-                          <g id="UrwUhy_2_">
-                            <g>
-                              <path d="M17.321,24.333c-0.371,0-0.744,0-1.115,0c-4.904-0.58-8.497-2.857-11.11-5.772C2.473,15.637,0.402,11.875,0,6.817 c0-0.453,0-0.906,0-1.358c0.091-0.921,0.544-1.55,1.067-2.086c0.65-0.666,1.63-1.522,2.522-1.553 c0.659-0.022,1.78,0.451,2.232,1.066c0.388,0.53,0.595,1.59,0.775,2.378c0.185,0.797,0.6,1.95,0.485,2.717 C6.905,9.177,5.317,9.684,4.85,10.553c1.551,3.721,4.089,6.456,7.472,8.345c0.847-0.465,1.595-1.864,2.767-1.892 c0.428-0.012,0.972,0.209,1.406,0.34c0.477,0.143,0.891,0.326,1.311,0.484c0.705,0.266,1.957,0.621,2.378,1.213 c0.433,0.61,0.681,1.608,0.581,2.231C20.571,22.508,18.538,23.877,17.321,24.333z"/>
-                            </g>
-                          </g>
-                          <path d="M12.529,1.528c5.949,0,10.771,4.822,10.771,10.771h1.529C24.829,5.507,19.323,0,12.529,0V1.528z"/>
-                          <path d="M12.529,9.327v1.552c0.785,0,1.421,0.636,1.421,1.42h1.553C15.502,10.657,14.172,9.327,12.529,9.327z"/>
-                          <path d="M12.529,6.246c3.345,0,6.056,2.71,6.056,6.054h1.588c0-4.22-3.422-7.641-7.644-7.641V6.246z"/>
-                        </g>
+                      <svg class="data-person__input data-person__input--phone" width="25" height="25" role="img">
+                        <title>Укажите ваш номер телефона (обязательное поле)</title>
+                        <use xlink:href="img/sprite.svg#phone"></use>
                       </svg>
-                      <!-- "Введите ваш номер телефона" -->
                     </div>
                     <div class="form__title-wrapper form__title-wrapper--email">
                       <legend class="form__title form__title--data-person">E-mail</legend>
-                      <hr class="form__title--line form__title--line-short">
+                      <hr class="form__title-line form__title-line--short">
                     </div>
                     <div class="form__input-wrapper">
                       <label for="e-mail"></label>
                       <input class="data-person__input data-person__input-email" type="email" name="email" id="e-mail" placeholder="Ваш Email*" required>
-                      <svg class="data-person__input data-person__input--email" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px" height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
-                        <path id="mail" fill="#333333" d="M28,5H4C1.791,5,0,6.792,0,9v13c0,2.209,1.791,4,4,4h24c2.209,0,4-1.791,4-4V9 C32,6.792,30.209,5,28,5z M2,10.25l6.999,5.25L2,20.75V10.25z M30,22c0,1.104-0.898,2-2,2H4c-1.103,0-2-0.896-2-2l7.832-5.875 l4.368,3.277c0.533,0.397,1.166,0.6,1.8,0.6c0.633,0,1.266-0.201,1.799-0.6l4.369-3.277L30,22L30,22z M30,20.75l-7-5.25l7-5.25 V20.75z M17.199,18.602c-0.35,0.263-0.763,0.4-1.199,0.4s-0.851-0.139-1.2-0.4L10.665,15.5l-0.833-0.625L2,9.001V9 c0-1.103,0.897-2,2-2h24c1.102,0,2,0.897,2,2L17.199,18.602z"/>
+                      <svg class="data-person__input data-person__input--email" width="32" height="32" role="img">
+                        <title>Укажите вашу электронную почту (обязательное поле)</title>
+                        <use xlink:href="img/sprite.svg#email"></use>
                       </svg>
-                      <!-- "Введите вашу электронную почту" -->
                     </div>
                   </div>
                 </fieldset>
@@ -200,7 +199,7 @@ content="width=device-width,initial-scale=1">
                 <div class="form__wrapper form__wrapper--add">
                   <div class="form__title-wrapper form__title-wrapper--add">
                     <legend class="form__title form__title--add">Доп</legend>
-                    <hr class="form__title--line">
+                    <hr class="form__title-line">
                   </div>
                   <textarea class="form__textarea" rows="8" cols="29" name="message" id="message" placeholder="Опишите все ваши пожелания к заказу"></textarea>
                 </div>
@@ -215,24 +214,36 @@ content="width=device-width,initial-scale=1">
 
       <footer class="page-footer">
         <div class="page-footer__wrapper">
-          <svg class="page-footer__logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="102" height="34" viewBox="0 0 102 34">
-            <image id="logo-footer.svg" width="102" height="34" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGYAAAAiCAMAAACayFwqAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAANlBMVEUAAAAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAAAACSUWGxAAAAEHRSTlMAYN/vML+AUBBwryBAz4+fDwva1QAAAAFiS0dEAIgFHUgAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiBB0XKhJFEDE+AAAC/UlEQVRIx+WXy2KtIAxFBSQioPD/X1shD4La097BHZVJjzyyQnYCdFlem7HVrct/b77WCn8QswEE+Qh79OkfMZ4/1rwD7BmthZyDmhiviVkoR61H+I39YGAlzNk7cnGVWus4tdmrVfV9o6QM4H00OFacMzJkrlWlhcJ7wNFaXbmmd45RZq91LawaU9TvXCx7F3nMTsGKbzFZHaolZncMazO2k+UR6HTZiZDX1KzXFh6n/emrBnRZx2dzYFMYQKMqV4ZMzaeCnQ6D0NeJ2qF/tR9wtM7m4MEZtaflthurMWm4dAxfeRzjRxW/Mcbg30yfs+Qbh6jqXCnkNy6GV0wZIna7+TuMeE9DJ8dCbUYn+YypQaSpbhgJP2KAMWMz3WRS8wv95WxZRSjehgroDZNQJcaozSzaN65zwhwsK/7UGF2NPSCnGMuo5ryZpHcTZ0z3+ag3bZ4YCRIN0UQzAj8v4vlQJQlSfcXEd4zt4aOJPXfgFxgXKGYTpu25Wt9bP4kHBlXqSZITmxCMURgLWTDXkmPEbyWPEvd10QIuO3I2AFadPoVNjHzFFSwJutcGXC953rB4tOarrTlSYKHqRhgVEd7n3DxiuoLt+NkZY+vtXotYUSBBtMh1uNKZsZ2eXVuG0/vCZ2fHBL5TEmOme03KMfXpoMX1vC9Pla31GyJjH6lvJUvgjkGt1VE5YQ7KafMJY1m2+D1muWPUEV1dq0bHyf+G0fV1GfiMSQqjjmiskoIzPmICpfITk/CJkYbVB+YcHfAZg14tD8xqKRIZ3bhhgk5Jvno/YQCFvGOAnU1DG/8uliSBxnDqMsbYfpowZld0UGcYSNo+Mb0s/E3XG4YaPWC4TPrtuEnRgeDfMH0y1dYds80YfkFRmfCDhhJp116hNmMCRWifMIF2v88YudvpiBKswUdRlqBto+DkRjrk/DoX0ct2L87DbwPDt+BaXRSN6PzL1L+J4ND8sOPsu9DXv0XXo1Yu9pRfn+6nXrXg67a5HffH9Gye/2ilvLy2L1jlWQBgUWLiAAAAAElFTkSuQmCC"/>
+          <svg class="page-footer__logo" width="102" height="35">
+            <use xlink:href="img/sprite.svg#footer-logo"></use>
           </svg>
           <nav class="page-footer__social social">
             <ul class="social__list">
               <li class="social__item">
-                <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">
+                <a class="social__link" href="https://www.instagram.com/htmlacademy">
                   <span class="visually-hidden">Инстаграм</span>
+                  <svg class="social__link-instagram" width="22" height="22" role="img">
+                    <title>Переход в Instagram HTML Academy</title>
+                    <use xlink:href="img/sprite.svg#instagram"></use>
+                  </svg>
                 </a>
               </li>
               <li class="social__item">
-                <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
+                <a class="social__link" href="https://www.facebook.com/htmlacademy">
                   <span class="visually-hidden">Фейсбук</span>
+                  <svg class="social__link-facebook" width="15" height="28" role="img">
+                    <title>Переход в Facebook HTML Academy</title>
+                    <use xlink:href="img/sprite.svg#facebook"></use>
+                  </svg>
                 </a>
               </li>
               <li class="social__item">
-                <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru">
+                <a class="social__link" href="https://twitter.com/htmlacademy_ru">
                   <span class="visually-hidden">Твиттер</span>
+                  <svg class="social__link-twitter" width="15" height="28" role="img">
+                    <title>Переход в Twitter HTML Academy</title>
+                    <use xlink:href="img/sprite.svg#twitter"></use>
+                  </svg>
                 </a>
               </li>
             </ul>
@@ -241,8 +252,9 @@ content="width=device-width,initial-scale=1">
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
               <span class="copyright__text">Разработано</span>
               <span class="visually-hidden">HTML Academy</span>
-              <svg class="copyright__link--svg" version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26" height="34" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
-                <path fill="#63D1BB" d="M13.62,0.017L13.472,0L0,1.412v24.661l13.473,8.017l13.43-7.99l0.042-0.025V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 L13.494,5.23l-0.087,0.05l-0.088-0.056v0.109L1.925,12.118V3.147l11.548-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.014,1.415l5.904,3.513l-0.86,0.507l-5.03-2.992l-0.014,1.415l3.827,2.275l-0.782,0.523l-3.031-1.787 l-0.014,1.413l1.853,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.016,1.044L5.41,18.234L5.395,19.65 l7.979,4.795l0.018,1.076l-7.973-4.74l-0.013,1.414l8.021,4.822l0.046,0.025l8.143-4.872l-0.011-5.177l3.415-2.036v10.021 L13.472,31.85L1.925,24.979V15.127z"/>
+              <svg class="copyright__icon" width="27" height="35" role="img">
+                <title>Переход на сайт HTML Academy</title>
+                <use xlink:href="img/sprite.svg#copyright"></use>
               </svg>
             </a>
           </p>

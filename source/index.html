@@ -25,10 +25,12 @@ content="width=device-width,initial-scale=1">
         </a>
         <nav class="main-nav">
           <button class="main-nav__toggle" type="button">
-            <svg class="main-nav__toggle--close" width="20" height="20">
+            <svg class="main-nav__toggle main-nav__toggle--close" width="20" height="20" role="img">
+              <title>Закрыть меню</title>
               <use xlink:href="img/sprite.svg#toggle-close"></use>
             </svg>
-            <svg class="main-nav__toggle--open" width="20" height="20">
+            <svg class="main-nav__toggle main-nav__toggle--open" width="20" height="20" role="img">
+              <title>Открыть меню</title>
               <use xlink:href="img/sprite.svg#toggle-open"></use>
             </svg>
           </button>
@@ -53,8 +55,10 @@ content="width=device-width,initial-scale=1">
                 </div>
               </div>
               <li class="site-list__item">
-                <a class="site-list__link site-list__link--search-hidden" href="#">Поиск по сайту
-                  <svg class="site-list__item--magnifier" width="18" height="18">
+                <a class="site-list__link" href="#">
+                  <span class="site-list__link-hidden">Поиск по сайту</span>
+                  <svg class="site-list__icon-magnifier" width="18" height="18" role="img">
+                    <title>Найти на сайте</title>
                     <use xlink:href="img/sprite.svg#magnifier"></use>
                   </svg>
                 </a>
@@ -62,7 +66,8 @@ content="width=device-width,initial-scale=1">
               <div class="site-list__wrapper-right">
                 <li class="site-list__item">
                   <a class="site-list__link" href="#">Корзина: пока пуста
-                    <svg class="site-list__item--basket" width="18" height="18">
+                    <svg class="site-list__icon-basket" width="18" height="18" role="img">
+                      <title>Переход в корзину</title>
                       <use xlink:href="img/sprite.svg#cart"></use>
                     </svg>
                   </a>
@@ -87,10 +92,10 @@ content="width=device-width,initial-scale=1">
           </header>
           <ul class="intro__list">
             <li class="intro__link intro__link--lamp">
-              <a class="intro__links" href="#">Предметы интерьера</a>
+              <a class="intro__links intro__link--lamp" href="#">Предметы интерьера</a>
             </li>
             <li class="intro__link intro__link--lego">
-              <a class="intro__links" href="#">Детские игрушки</a>
+              <a class="intro__links intro__link--lego" href="#">Детские игрушки</a>
             </li>
           </ul>
         </section>
@@ -117,6 +122,11 @@ content="width=device-width,initial-scale=1">
             </tr>
           </table>
           <picture>
+            <!-- В хроме не показывает изображения webp -->
+            <source type="image/webp" media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.webp 1x, img/triple-set-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.webp 1x, img/triple-set-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/triple-set-mobile@1x.webp 1x, img/triple-set-mobile@2x.webp 2x">
+
             <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
             <img class="top-product__image" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="На руках держат три вязаные корзинки">
@@ -124,7 +134,7 @@ content="width=device-width,initial-scale=1">
           <p class="top-product__price">
             <strong>Цена: 990 руб.</strong>
           </p>
-          <a class="top-product__button button" href="size.html">Заказать</a>
+          <a class="top-product__button button button__open-size-form" href="size.html">Заказать</a>
           <!-- after click - modal window -->
         </section>
 
@@ -169,13 +179,15 @@ content="width=device-width,initial-scale=1">
 
           <div class="reviews__toggles">
             <button class="reviews__toggle reviews__toggle--left" type="button">
-              <svg version="1.1" id="Layer_3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="26" viewBox="0 0 50 26.003" enable-background="new 0 0 50 26.003" xml:space="preserve">
-                <polygon points="50,11.002 7.659,11.002 15.833,2.828 13.005,0 0,12.998 0.003,13.001 0,13.005 13.005,26.003 15.833,23.175 7.661,15.002 50,15.002 "/>
-              </svg>
+            <svg class="" width="50" height="26" role="img">
+              <title>Листать отзыв назад</title>
+              <use xlink:href="img/sprite.svg#arrow-left"></use>
+            </svg>
             </button>
             <button class="reviews__toggle reviews__toggle--right" type="button">
-              <svg version="1.1" id="Layer_4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="26" viewBox="0 0 50 26.003" enable-background="new 0 0 50 26.003" xml:space="preserve">
-                <polygon points="0,11.002 42.341,11.002 34.166,2.828 36.995,0 50,12.998 49.996,13.001 50,13.005 36.995,26.003 34.166,23.175 42.339,15.002 0,15.002 "/>
+              <svg width="50" height="26" role="img">
+                <title>Листать отзыв вперёд</title>
+                <use xlink:href="img/sprite.svg#arrow-right"></use>
               </svg>
             </button>
           </div>
@@ -190,7 +202,7 @@ content="width=device-width,initial-scale=1">
           <div class="contacts__wrapper">
             <p class="contacts__email">
               <span>e-mail:</span>
-              <span class="contacts__email-value">info@mimimishkashop.ru</span>
+              <a class="contacts__email-value" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
             </p>
             <p class="contacts__address">
               <span>адрес:</span>
@@ -203,33 +215,43 @@ content="width=device-width,initial-scale=1">
         </div>
         <div class="page-footer__map">
           <h2 class="visually-hidden">Магазин «Мишка» на карте</h2>
-          <svg class="page-footer__map-icon" version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="66px" height="100.801px" viewBox="0 0 66 100.801" enable-background="new 0 0 66 100.801" xml:space="preserve">
-            <path fill="#FFFFFF" d="M56.334,9.228c-12.892-12.305-33.773-12.305-46.667,0c-12.891,12.297-12.891,32.248,0,44.542 c0,0,23.318,21.832,23.318,47.031c0-25.199,23.343-47.031,23.343-47.031C69.225,41.476,69.225,21.525,56.334,9.228z"/>
-            <path fill="#6BC6B3" d="M47.036,45.522c-0.636-3.277,0.13-6.947,0.027-10.284c-0.115-3.755-0.713-7.485-0.665-11.246 c0.039-3.044,0.545-6.173-0.503-9.091c0.065-0.332,0.134-0.662,0.195-0.995c0.271-1.463-4.577-0.689-5.338,0.649 c-0.479,0.393-0.726,0.861-0.523,1.339c0.051,0.121,0.097,0.243,0.142,0.365c-0.917,4.485-2.197,8.827-3.668,13.174 c-0.563,1.663-1.244,3.288-1.817,4.946c-0.814-1.545-1.638-3.071-2.3-4.728c-1.922-4.805-3.656-9.661-6-14.285 c0.266-2.14-4.484-1.916-5.421,0.044c-1.132,2.371-0.986,4.763-0.613,7.299c0.42,2.858,0.494,5.668,0.528,8.554 c0.066,5.566,0.502,11.119,0.584,16.684c-0.496,0.552-0.646,1.233-0.127,1.924c0.226,0.302,0.505,0.535,0.799,0.769 c1.265,1.013,4.899,0.15,4.893-1.779c-0.02-5.771-0.437-11.531-0.589-17.299c-0.015-0.565-0.025-1.129-0.034-1.694 c0.08,0.203,0.159,0.406,0.24,0.607c0.896,2.245,1.833,4.427,3.059,6.514c1.214,2.068,1.824,4.289,2.523,6.547 c-0.265,0.303-0.423,0.647-0.326,0.991c-0.055,0.251,0.099,0.409,0.352,0.504c0.894,0.766,2.578,0.383,3.513-0.01 c0.4-0.168,0.785-0.364,1.155-0.593c0.483-0.297,1.236-0.95,1.021-1.622c-0.041-0.13-0.081-0.26-0.121-0.391 c0.657-1.776,0.992-3.625,1.352-5.5c0.381-2,1.095-3.892,1.812-5.786c0.073,0.867,0.149,1.732,0.219,2.597 c0.285,3.575,0.046,7.099,0.011,10.674c-0.013,1.186,0.074,2.287,0.306,3.445c0.096,0.479,0.514,2.53,0.394,2.642 c-0.855,0.79-0.606,1.759,0.539,2.011c1.279,0.281,2.912-0.148,3.877-1.039C48.207,49.911,47.414,47.479,47.036,45.522z"/>
+          <svg class="page-footer__map-icon" width="66" height="101">
+            <use xlink:href="img/sprite.svg#map-pin"></use>
           </svg>
-          <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651586!2d30.320894616097!3d59.938794181876254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+Street%2C+19%2C+Sankt-Peterburg%2C+191186!5e0!3m2!1sen!2sru!4v1523632385150" width="322" height="457" style="border:0" allowfullscreen></iframe> -->
+          <iframe class="page-footer__map-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651586!2d30.320894616097!3d59.938794181876254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+Street%2C+19%2C+Sankt-Peterburg%2C+191186!5e0!3m2!1sen!2sru!4v1523632385150" width="320" height="457" style="border:0" allowfullscreen></iframe>
         </div>
         <a class="page-footer__button button" href="feedback.html">Напишите нам</a>
-        <!-- лого мишка width="102" height="34" -->
         <div class="page-footer__wrapper">
-          <svg class="page-footer__logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="102" height="34" viewBox="0 0 102 34">
-            <image id="logo-footer.svg" width="102" height="34" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGYAAAAiCAMAAACayFwqAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAANlBMVEUAAAAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAAAACSUWGxAAAAEHRSTlMAYN/vML+AUBBwryBAz4+fDwva1QAAAAFiS0dEAIgFHUgAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiBB0XKhJFEDE+AAAC/UlEQVRIx+WXy2KtIAxFBSQioPD/X1shD4La097BHZVJjzyyQnYCdFlem7HVrct/b77WCn8QswEE+Qh79OkfMZ4/1rwD7BmthZyDmhiviVkoR61H+I39YGAlzNk7cnGVWus4tdmrVfV9o6QM4H00OFacMzJkrlWlhcJ7wNFaXbmmd45RZq91LawaU9TvXCx7F3nMTsGKbzFZHaolZncMazO2k+UR6HTZiZDX1KzXFh6n/emrBnRZx2dzYFMYQKMqV4ZMzaeCnQ6D0NeJ2qF/tR9wtM7m4MEZtaflthurMWm4dAxfeRzjRxW/Mcbg30yfs+Qbh6jqXCnkNy6GV0wZIna7+TuMeE9DJ8dCbUYn+YypQaSpbhgJP2KAMWMz3WRS8wv95WxZRSjehgroDZNQJcaozSzaN65zwhwsK/7UGF2NPSCnGMuo5ryZpHcTZ0z3+ag3bZ4YCRIN0UQzAj8v4vlQJQlSfcXEd4zt4aOJPXfgFxgXKGYTpu25Wt9bP4kHBlXqSZITmxCMURgLWTDXkmPEbyWPEvd10QIuO3I2AFadPoVNjHzFFSwJutcGXC953rB4tOarrTlSYKHqRhgVEd7n3DxiuoLt+NkZY+vtXotYUSBBtMh1uNKZsZ2eXVuG0/vCZ2fHBL5TEmOme03KMfXpoMX1vC9Pla31GyJjH6lvJUvgjkGt1VE5YQ7KafMJY1m2+D1muWPUEV1dq0bHyf+G0fV1GfiMSQqjjmiskoIzPmICpfITk/CJkYbVB+YcHfAZg14tD8xqKRIZ3bhhgk5Jvno/YQCFvGOAnU1DG/8uliSBxnDqMsbYfpowZld0UGcYSNo+Mb0s/E3XG4YaPWC4TPrtuEnRgeDfMH0y1dYds80YfkFRmfCDhhJp116hNmMCRWifMIF2v88YudvpiBKswUdRlqBto+DkRjrk/DoX0ct2L87DbwPDt+BaXRSN6PzL1L+J4ND8sOPsu9DXv0XXo1Yu9pRfn+6nXrXg67a5HffH9Gye/2ilvLy2L1jlWQBgUWLiAAAAAElFTkSuQmCC"/>
+          <svg class="page-footer__logo" width="102" height="35">
+            <use xlink:href="img/sprite.svg#footer-logo"></use>
           </svg>
           <nav class="page-footer__social social">
             <ul class="social__list">
               <li class="social__item">
-                <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">
+                <a class="social__link" href="https://www.instagram.com/htmlacademy">
                   <span class="visually-hidden">Инстаграм</span>
+                  <svg class="social__link-instagram" width="22" height="22" role="img">
+                    <title>Переход в Instagram HTML Academy</title>
+                    <use xlink:href="img/sprite.svg#instagram"></use>
+                  </svg>
                 </a>
               </li>
               <li class="social__item">
-                <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
+                <a class="social__link" href="https://www.facebook.com/htmlacademy">
                   <span class="visually-hidden">Фейсбук</span>
+                  <svg class="social__link-facebook" width="15" height="28" role="img">
+                    <title>Переход в Facebook HTML Academy</title>
+                    <use xlink:href="img/sprite.svg#facebook"></use>
+                  </svg>
                 </a>
               </li>
               <li class="social__item">
-                <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru">
+                <a class="social__link" href="https://twitter.com/htmlacademy_ru">
                   <span class="visually-hidden">Твиттер</span>
+                  <svg class="social__link-twitter" width="15" height="28" role="img">
+                    <title>Переход в Twitter HTML Academy</title>
+                    <use xlink:href="img/sprite.svg#twitter"></use>
+                  </svg>
                 </a>
               </li>
             </ul>
@@ -238,8 +260,9 @@ content="width=device-width,initial-scale=1">
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
               <span class="copyright__text">Разработано</span>
               <span class="visually-hidden">HTML Academy</span>
-              <svg class="copyright__link--svg" version="1.1" id="Layer_5" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26" height="34" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
-                <path d="M13.62,0.017L13.472,0L0,1.412v24.661l13.473,8.017l13.43-7.99l0.042-0.025V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 L13.494,5.23l-0.087,0.05l-0.088-0.056v0.109L1.925,12.118V3.147l11.548-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.014,1.415l5.904,3.513l-0.86,0.507l-5.03-2.992l-0.014,1.415l3.827,2.275l-0.782,0.523l-3.031-1.787 l-0.014,1.413l1.853,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.016,1.044L5.41,18.234L5.395,19.65 l7.979,4.795l0.018,1.076l-7.973-4.74l-0.013,1.414l8.021,4.822l0.046,0.025l8.143-4.872l-0.011-5.177l3.415-2.036v10.021 L13.472,31.85L1.925,24.979V15.127z"/>
+              <svg class="copyright__icon" width="27" height="35" role="img">
+                <title>Переход на сайт HTML Academy</title>
+                <use xlink:href="img/sprite.svg#copyright"></use>
               </svg>
             </a>
           </p>

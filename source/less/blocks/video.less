@@ -68,13 +68,24 @@
     top: 23%;
     left: 30%;
 
-    display: table;
     width: 101px;
     height: 77px;
 
     background-image: url("../img/icon-play.svg");
     background-repeat: no-repeat;
-    background-size: 101px 77px;
+    background-size: cover;
+
+    cursor: pointer;
+
+    // FIXME: как увеличить иконку play?
+    &:hover,
+    &:focus {
+
+      transform: scale(1.2);
+      // width: 122px;
+      // height: 100px;
+      // background-size: 122px;
+    }
   }
 }
 
@@ -100,6 +111,16 @@
   height: 48px;
   margin-top: 25px;
   margin-bottom: 30px;
+
+  &:hover,
+  &:focus {
+    color: #ffffff;
+    background-color: #444444;
+  }
+
+  &:active {
+    color: #8d8d8d;
+  }
 }
 
 @media (min-width: @tablet-width) {

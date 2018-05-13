@@ -1,3 +1,17 @@
+.catalog__item {
+  margin-bottom: 31px;
+
+  border: 1px solid #ececec;
+
+  &:hover {
+    box-shadow: 0 6px 10px 0 #ececec;
+  }
+
+  &:active {
+    box-shadow: 0 3px 10px 0 #ececec;
+  }
+}
+
 .catalog__list {
   margin-top: 30px;
   margin-bottom: 0;
@@ -7,18 +21,17 @@
   list-style: none;
 }
 
-.catalog__item-link {
+.catalog__title .catalog__item-link {
   color: @primary-text-color;
-}
 
-.catalog__image-mobile {
-  margin-top: 0;
-  margin-bottom: 0;
-}
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
 
-.catalog__image-tablet,
-.catalog__image-desktop {
-  display: none;
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .catalog__title {
@@ -48,28 +61,40 @@
 .catalog__price {
   position: relative;
 
-  margin-top: 43px;
-  margin-bottom: 60px;
+  margin-top: 20px;
+  margin-bottom: 27px;
   margin-left: 28px;
   margin-right: 28px;
+  padding-top: 23px;
 
-  &--icon {
-    &::before {
-      content: url("../img/icon-cart.svg");
-      position: absolute;
-      top: 0;
-      left: 91%;
+  border-top: 1px solid #ececec;
+}
 
-      display: table;
-      width: 35px;
-      height: 37px;
+.catalog__button-basket {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 91%;
 
-      background-size: 20px 19px;
-      background-repeat: no-repeat;
-      opacity: 0.2;
+  display: table;
+  width: 20px;
+  height: 20px;
 
-      cursor: pointer;
-    }
+  background-size: 20px 19px;
+  background-repeat: no-repeat;
+  opacity: 0.2;
+
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    fill: #63d1bb;
+    opacity: 1;
+  }
+
+  &:active {
+    fill: #d0f1ea;
+    opacity: 1;
   }
 }
 
@@ -136,10 +161,17 @@
   .catalog__price {
     width: 275px;
     margin-top: auto;
-    margin-bottom: 30px;
+    margin-bottom: 27px;
+    padding-top: 20px;
 
     font-size: @body-font-size + 2px;
     line-height: 24px;
+  }
+
+  .catalog__button-basket {
+    content: "";
+    position: absolute;
+    left: 91%;
   }
 }
 
@@ -151,7 +183,6 @@
     margin-top: 130px;
     padding-left: 100px;
     padding-right: 100px;
-
 
     &::before {
       top: -21%;
@@ -171,5 +202,6 @@
 
   .catalog__price {
     width: 260px;
+    padding-top: 23px;
   }
 }
