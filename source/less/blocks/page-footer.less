@@ -31,6 +31,16 @@
   margin-right: 30px;
   margin-top: 40px;
   margin-bottom: 40px;
+
+  &:hover,
+  &:focus {
+    color: #ffffff;
+    background-color: #444444;
+  }
+
+  &:active {
+    color: #8d8d8d;
+  }
 }
 
 .page-footer__wrapper {
@@ -79,6 +89,19 @@
     display: flex;
     width: 220px;
     padding-right: 113px;
+
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      fill: #63d1bb;
+      opacity: 1;
+    }
+
+    &:active {
+      fill: #d0f1ea;
+      opacity: 1;
+    }
   }
 
   .page-footer__button {

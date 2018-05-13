@@ -51,12 +51,22 @@
   line-height: 24px;
 
   color: @intro-link-text-color;
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .intro__link {
   position: relative;
 
   width: 320px;
+
+  &:hover,
+  &:focus {
+    margin-top: -5px;
+    padding-bottom: 5px;
+  }
 
   &--lamp {
     background-color: @intro-link-background-color-lamp;
@@ -74,6 +84,12 @@
       background-repeat: no-repeat;
       background-size: 40px 62px;
       opacity: 0.2;
+
+      cursor: pointer;
+
+      &:active {
+        fill: #44c0aa;
+      }
     }
   }
 
@@ -93,6 +109,10 @@
       background-repeat: no-repeat;
       background-size: 60px 60px;
       opacity: 0.2;
+
+      &:active {
+        fill: #44c0aa;
+      }
     }
   }
 }
@@ -148,6 +168,11 @@
   .intro__link {
     flex-basis: 334px;
     margin-top: -118px;
+
+    &:hover,
+    &:focus {
+      margin-top: -123px;
+    }
   }
 }
 
@@ -191,6 +216,11 @@
   .intro__link {
     flex-basis: 525px;
     margin-top: -122px;
+
+    &:hover,
+    &:focus {
+      margin-top: -128px;
+    }
 
     &--lamp {
       &::before {

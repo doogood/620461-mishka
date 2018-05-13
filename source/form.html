@@ -28,11 +28,11 @@ content="width=device-width,initial-scale=1">
         </a>
         <nav class="main-nav">
           <button class="main-nav__toggle" type="button">
-            <svg class="main-nav__toggle--close" width="20" height="20" role="img">
+            <svg class="main-nav__toggle main-nav__toggle--close" width="20" height="20" role="img">
               <title>Закрыть меню</title>
               <use xlink:href="img/sprite.svg#toggle-close"></use>
             </svg>
-            <svg class="main-nav__toggle--open" width="20" height="20" role="img">
+            <svg class="main-nav__toggle main-nav__toggle--open" width="20" height="20" role="img">
               <title>Открыть меню</title>
               <use xlink:href="img/sprite.svg#toggle-open"></use>
             </svg>
@@ -59,8 +59,8 @@ content="width=device-width,initial-scale=1">
               </div>
               <li class="site-list__item">
                 <a class="site-list__link" href="#">
-                  <span class="site-list__link--search-hidden">Поиск по сайту</span>
-                  <svg class="site-list__item--magnifier site-list__link--search-hidden" width="18" height="18" role="img">
+                  <span class="site-list__link-hidden">Поиск по сайту</span>
+                  <svg class="site-list__icon-magnifier" width="18" height="18" role="img">
                     <title>Найти на сайте</title>
                     <use xlink:href="img/sprite.svg#magnifier"></use>
                   </svg>
@@ -69,7 +69,7 @@ content="width=device-width,initial-scale=1">
               <div class="site-list__wrapper-right">
                 <li class="site-list__item">
                   <a class="site-list__link" href="#">Корзина: пока пуста
-                    <svg class="site-list__item--basket" width="18" height="18" role="img">
+                    <svg class="site-list__icon-basket" width="18" height="18" role="img">
                       <title>Переход в корзину</title>
                       <use xlink:href="img/sprite.svg#cart"></use>
                     </svg>
@@ -95,7 +95,7 @@ content="width=device-width,initial-scale=1">
                 <div class="form__wrapper">
                   <div class="form__title-wrapper">
                     <legend class="form__title">Тип</legend>
-                    <hr class="form__title--line">
+                    <hr class="form__title-line">
                   </div>
                   <ul class="filter-type__list">
                     <li class="filter-type__option">
@@ -113,7 +113,7 @@ content="width=device-width,initial-scale=1">
                 <div class="form__wrapper form__wrapper--color-tablet">
                   <div class="form__title-wrapper">
                     <legend class="form__title">Цвет</legend>
-                    <hr class="form__title--line">
+                    <hr class="form__title-line">
                   </div>
                   <ul class="filter-color__list">
                     <li class="filter-color__option">
@@ -147,7 +147,7 @@ content="width=device-width,initial-scale=1">
                 <div class="form__wrapper">
                   <div class="form__title-wrapper form__title-wrapper--data-person">
                     <legend class="form__title">ФИО</legend>
-                    <hr class="form__title--line">
+                    <hr class="form__title-line">
                   </div>
                   <ul class="data-person__list">
                     <li class="data-person__option">
@@ -165,12 +165,12 @@ content="width=device-width,initial-scale=1">
                   </ul>
                 </div>
               </fieldset>
-              <div class="form__wrapper--tablet">
+              <div class="form__wrapper-tablet">
                 <fieldset class="form__border">
                   <div class="form__wrapper form__wrapper--column">
                     <div class="form__title-wrapper form__title-wrapper--phone">
                       <legend class="form__title  form__title--data-person">Тел</legend>
-                      <hr class="form__title--line">
+                      <hr class="form__title-line">
                     </div>
                     <div class="form__input-wrapper">
                       <label for="telephone"></label>
@@ -182,7 +182,7 @@ content="width=device-width,initial-scale=1">
                     </div>
                     <div class="form__title-wrapper form__title-wrapper--email">
                       <legend class="form__title form__title--data-person">E-mail</legend>
-                      <hr class="form__title--line form__title--line-short">
+                      <hr class="form__title-line form__title-line--short">
                     </div>
                     <div class="form__input-wrapper">
                       <label for="e-mail"></label>
@@ -199,7 +199,7 @@ content="width=device-width,initial-scale=1">
                 <div class="form__wrapper form__wrapper--add">
                   <div class="form__title-wrapper form__title-wrapper--add">
                     <legend class="form__title form__title--add">Доп</legend>
-                    <hr class="form__title--line">
+                    <hr class="form__title-line">
                   </div>
                   <textarea class="form__textarea" rows="8" cols="29" name="message" id="message" placeholder="Опишите все ваши пожелания к заказу"></textarea>
                 </div>
@@ -220,18 +220,30 @@ content="width=device-width,initial-scale=1">
           <nav class="page-footer__social social">
             <ul class="social__list">
               <li class="social__item">
-                <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">
+                <a class="social__link" href="https://www.instagram.com/htmlacademy">
                   <span class="visually-hidden">Инстаграм</span>
+                  <svg class="social__link-instagram" width="22" height="22" role="img">
+                    <title>Переход в Instagram HTML Academy</title>
+                    <use xlink:href="img/sprite.svg#instagram"></use>
+                  </svg>
                 </a>
               </li>
               <li class="social__item">
-                <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
+                <a class="social__link" href="https://www.facebook.com/htmlacademy">
                   <span class="visually-hidden">Фейсбук</span>
+                  <svg class="social__link-facebook" width="15" height="28" role="img">
+                    <title>Переход в Facebook HTML Academy</title>
+                    <use xlink:href="img/sprite.svg#facebook"></use>
+                  </svg>
                 </a>
               </li>
               <li class="social__item">
-                <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru">
+                <a class="social__link" href="https://twitter.com/htmlacademy_ru">
                   <span class="visually-hidden">Твиттер</span>
+                  <svg class="social__link-twitter" width="15" height="28" role="img">
+                    <title>Переход в Twitter HTML Academy</title>
+                    <use xlink:href="img/sprite.svg#twitter"></use>
+                  </svg>
                 </a>
               </li>
             </ul>
@@ -240,7 +252,7 @@ content="width=device-width,initial-scale=1">
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
               <span class="copyright__text">Разработано</span>
               <span class="visually-hidden">HTML Academy</span>
-              <svg class="copyright__link--svg" width="27" height="35" role="img">
+              <svg class="copyright__icon" width="27" height="35" role="img">
                 <title>Переход на сайт HTML Academy</title>
                 <use xlink:href="img/sprite.svg#copyright"></use>
               </svg>

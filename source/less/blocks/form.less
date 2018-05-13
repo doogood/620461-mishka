@@ -25,16 +25,16 @@
   text-transform: uppercase;
 
   color: @mint-text-color;
+}
 
-  &--line {
-    width: 200px;
-    margin-left: -20px;
+.form__title-line {
+  width: 200px;
+  margin-left: -20px;
 
-    border: 0;
-    border-bottom: 1px solid #62d1ba;
-  }
+  border: 0;
+  border-bottom: 1px solid #62d1ba;
 
-  &--line-short {
+  &--short {
     width: 180px;
     margin-left: 0;
   }
@@ -67,6 +67,13 @@
 
 .form__input-wrapper {
   position: relative;
+
+  &:hover,
+  &:focus,
+  &:active {
+    fill: #62d1ba;
+    opacity: 1;
+  }
 }
 
 .form__textarea {
@@ -82,6 +89,17 @@
 
   border: 2px solid #444444;
   resize: none;
+
+  &:hover,
+  &:focus,
+  &:active {
+    border: 2px solid #62d1ba;
+    opacity: 1;
+  }
+
+  &::placeholder {
+    opacity: 0.2;
+  }
 }
 
 .form__note {
@@ -104,6 +122,16 @@
   line-height: 16px;
 
   background-color: @button-form-background-color;
+
+  &:hover,
+  &:focus {
+    color: #ffffff;
+    background-color: #444444;
+  }
+
+  &:active {
+    color: #8d8d8d;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -143,10 +171,6 @@
     padding-right: 50px;
     padding-left: 50px;
 
-    &--tablet {
-      background-color: @secondary-background-color;
-    }
-
     &--color-tablet {
       padding-right: 0;
     }
@@ -162,6 +186,10 @@
       padding-top: 25px;
       padding-bottom: 5px;
     }
+  }
+
+  .form__wrapper-tablet {
+    background-color: @secondary-background-color;
   }
 
   .form__title {
