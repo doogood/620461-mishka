@@ -34,7 +34,7 @@ content="width=device-width,initial-scale=1">
               <use xlink:href="img/sprite.svg#toggle-open"></use>
             </svg>
           </button>
-          <div class="main-nav__wrapper">
+          <div class="main-nav__wrapper modal modal__menu">
             <div class="main-nav__list site-list">
               <div class="site-list__wrapper-left">
                 <div class="site-list__wrapper-first">
@@ -122,7 +122,6 @@ content="width=device-width,initial-scale=1">
             </tr>
           </table>
           <picture>
-            <!-- В хроме не показывает изображения webp -->
             <source type="image/webp" media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.webp 1x, img/triple-set-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.webp 1x, img/triple-set-tablet@2x.webp 2x">
             <source type="image/webp" srcset="img/triple-set-mobile@1x.webp 1x, img/triple-set-mobile@2x.webp 2x">
@@ -269,28 +268,25 @@ content="width=device-width,initial-scale=1">
         </div>
       </footer>
       <!-- modal window -->
-      <section class="size-form size-form__modal">
+      <section class="size-form modal modal__size-form">
         <form action="https://echo.htmlacademy.ru" method="post">
           <h2 class="size-form__title">Добавить в корзину</h2>
           <p class="size-form__text">Выберите размер:</p>
           <div class="size-form__buttons">
-            <div class="size-form__option">
-              <input class="visually-hidden size-form__input size-form__input--radio" id="s" type="radio" name="size" value="S" checked>
-              <label for="s" class="size-form__label">S</label>
-            </div>
-            <div class="size-form__option">
-              <input class="visually-hidden size-form__input size-form__input--radio" type="radio" name="size" value="M">
-              <label class="size-form__label">M</label>
-            </div>
-            <div class="size-form__option">
-              <input class="visually-hidden size-form__input size-form__input--radio" type="radio" name="size" value="L">
-              <label class="size-form__label">L</label>
+            <input class="visually-hidden size-form__input size-form__input--s" id="size-s" type="radio" name="size" value="S" checked>
+            <input class="visually-hidden size-form__input size-form__input--m" id="size-m" type="radio" name="size" value="M">
+            <input class="visually-hidden size-form__input size-form__input--l" id="size-l" type="radio" name="size" value="L">
+            <div class="size-form__sizes">
+              <label for="size-s" class="size-form__size">S</label>
+              <label for="size-m" class="size-form__size">M</label>
+              <label for="size-l" class="size-form__size">L</label>
             </div>
           </div>
           <input class="size-form__button button" type="submit" value="Добавить">
         </form>
       </section>
     </div>
+    <script src="js/modal.js"></script>
     <script src="js/picturefill.min.js"></script>
   </body>
 </html>

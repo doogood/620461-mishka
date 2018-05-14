@@ -247,23 +247,20 @@ content="width=device-width,initial-scale=1">
           <h2 class="size-form__title">Добавить в корзину</h2>
           <p class="size-form__text">Выберите размер:</p>
           <div class="size-form__buttons">
-            <label class="size-form__button-s">
-              <input type="radio" name="size" value="S" checked>
-              S
-            </label>
-            <label class="size-form__button-m">
-              <input type="radio" name="size" value="M">
-              M
-            </label>
-            <label class="size-form__button-l">
-              <input type="radio" name="size" value="L">
-              L
-            </label>
+            <input class="visually-hidden size-form__input size-form__input--s" id="size-s" type="radio" name="size" value="S" checked>
+            <input class="visually-hidden size-form__input size-form__input--m" id="size-m" type="radio" name="size" value="M">
+            <input class="visually-hidden size-form__input size-form__input--l" id="size-l" type="radio" name="size" value="L">
+            <div class="size-form__sizes">
+              <label for="size-s" class="size-form__size">S</label>
+              <label for="size-m" class="size-form__size">M</label>
+              <label for="size-l" class="size-form__size">L</label>
+            </div>
           </div>
           <input class="size-form__button button" type="submit" value="Добавить">
         </form>
       </section>
     </div>
+    <script src="js/modal.js"></script>
     <script src="js/picturefill.min.js"></script>
   </body>
 </html>
