@@ -6,6 +6,7 @@
   display: block;
   width: 320px;
   margin: 0 auto;
+  padding-bottom: 30px;
 
   text-align: center;
 
@@ -70,10 +71,43 @@
 
 .size-form__button {
   margin: 0 auto;
-  margin-bottom: 47px;
 
   color: @button-text-color;
 
   background-color: @button-background-color;
   border: none;
+}
+
+@media (min-width: @tablet-width) {
+  .size-form {
+    width: 566px;
+  }
+
+  .size-form__title {
+    width: 400px;
+    margin-left: 90px;
+
+    font-size: @body-font-size + 15px;
+    line-height: 57px;
+  }
+
+  .size-form__text {
+    font-size: @body-font-size + 2px;
+    line-height: 30px;
+  }
+
+  .size-form__sizes {
+    width: 500px;
+    margin-left: 30px;
+  }
+
+  .size-form__size {
+    width: 104px;
+    height: 32px;
+    padding-top: 20px;
+  }
+
+  .size-form__button {
+    width: 335px;
+  }
 }
