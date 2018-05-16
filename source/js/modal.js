@@ -1,6 +1,8 @@
 var menuLink = document.querySelector(".main-nav__toggle--open");
 var menuModal = document.querySelector(".modal__menu");
-var close = menuModal.querySelector(".main-nav__toggle--close");
+var close = document.querySelector(".main-nav__toggle--close");
+
+menuModal.classList.add("modal__hide");
 
 menuLink.addEventListener("click", function (evt) {
   evt.preventDefault();
