@@ -6,9 +6,12 @@
     <meta
     name="viewport"
 content="width=device-width,initial-scale=1">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
+    <link rel="preload" href="css/style.min.css" as="style">
+    <link rel="preload" href="img/hero-mobile@2x.jpg" as="image">
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font">
   </head>
-
   <body>
     <div class="container">
       <header class="page-header">
@@ -286,7 +289,8 @@ content="width=device-width,initial-scale=1">
         </form>
       </section>
     </div>
-    <script src="js/modal.min.js"></script>
-    <script src="js/picturefill.min.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/picturefill.min.js" defer></script>
+    <script src="js/svgxuse.min.js" defer></script>
   </body>
 </html>
